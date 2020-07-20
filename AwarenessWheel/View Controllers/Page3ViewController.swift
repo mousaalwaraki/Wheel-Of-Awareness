@@ -9,47 +9,54 @@
 import UIKit
 import AVFoundation
 
-class Page3ViewController: UIViewController {
+class Page3ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var playerPageThree:AVAudioPlayer?
     var checkTime:Bool?
     var fullBodyLoops:Int = 30
     var hubInHubLoops:Int = 300
-    var allLoops:Int = 1
-    var iLoops:Int = 1
-    var mWeLoops:Int = 1
-    var fullBodyNumber = 0
-    var hubInHubNumber = 0
-    var allNumber = 1
-    var iNumber = 1
-    var mWeNumber = 1
-    var fileName = ""
+    var statementsLoop:Int = 1
+    
+    let wheelIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Wheel Intro", ofType: "mp3")!)
+    let rimOneIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 1 Intro", ofType: "mp3")!)
+    let rimOne = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 1", ofType: "mp3")!)
+    let rimTwoIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 2 Intro", ofType: "mp3")!)
+    let rimTwo = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 2", ofType: "mp3")!)
+    let rimThreePartOneIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 3 part 1 Intro", ofType: "mp3")!)
+    let rimThreePartOne = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 3 part 1", ofType: "mp3")!)
+    let rimThreePartTwoIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 3 part 2 Intro", ofType: "mp3")!)
+    let rimThreePartTwo = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 3 part 2", ofType: "mp3")!)
+    let hubInHubIntro = URL(fileURLWithPath: Bundle.main.path(forResource: "Hub In Hub Intro", ofType: "mp3")!)
+    let hubInHubSection = URL(fileURLWithPath: Bundle.main.path(forResource: "Hub In Hub", ofType: "mp3")!)
+    let rimFour = URL(fileURLWithPath: Bundle.main.path(forResource: "Rim 4", ofType: "mp3")!)
+    let finalSection = URL(fileURLWithPath: Bundle.main.path(forResource: "Final Section", ofType: "mp3")!)
+    let outro = URL(fileURLWithPath: Bundle.main.path(forResource: "Outro", ofType: "mp3")!)
+    let silence = URL(fileURLWithPath: Bundle.main.path(forResource: "Silence", ofType: "mp3")!)
+    
     
     @IBOutlet var pageThreeTitle: UILabel!
     @IBOutlet var playButton: UIButton!
-    @IBOutlet var seekForward: UIButton!
-    @IBOutlet var seekBack: UIButton!
-    @IBOutlet var sliderController: UISlider!
-    
     @IBOutlet weak var hubInHubLabel: UILabel!
-    @IBOutlet weak var statementsLabel: UILabel!
-    
     @IBOutlet var wheelIntroSwitch: UISwitch!
     @IBOutlet var rimOneSwitch: UISwitch!
     @IBOutlet var rimTwoSwitch: UISwitch!
     @IBOutlet var simpleMaSwitch: UISwitch!
     @IBOutlet var advancedMaSwitch: UISwitch!
     @IBOutlet weak var hubInHubSwitch: UISwitch!
-    
     @IBOutlet weak var hubInHub: UIButton!
-    @IBOutlet weak var all: UIButton!
-    @IBOutlet weak var i: UIButton!
-    @IBOutlet weak var mWe: UIButton!
+    @IBOutlet weak var minsTextField: UITextField!
+    @IBOutlet weak var secsTextField: UITextField!
+    @IBOutlet weak var loopsTextField: UITextField!
+    
     
     @IBAction func fullBodyButton(_ sender: Any) {
         thirdChoice = .fullBody
         loopsHidden()
         timeShowing()
+        
+        minsTextField.text = "\(UserDefaults.standard.value(forKey: "fullBodyMins") ?? "smth")"
+        secsTextField.text = "\(UserDefaults.standard.value(forKey: "fullBodySecs") ?? "smth")"
+        
         if fullBodyLoops == 30 {
             minsTextField.text = "0"
             minsTextField.textColor = .gray
@@ -60,51 +67,41 @@ class Page3ViewController: UIViewController {
             secsTextField.textColor = .label
         }
     }
+    
     @IBAction func hubInHubButton(_ sender: Any) {
         thirdChoice = .hubInHub
         loopsHidden()
         timeShowing()
+        
+        minsTextField.text = "\(UserDefaults.standard.value(forKey: "hubMins") ?? "smth")"
+        secsTextField.text = "\(UserDefaults.standard.value(forKey: "hubSecs") ?? "smth")"
+        
         if hubInHubLoops == 300 {
             minsTextField.text = "6"
             minsTextField.textColor = .gray
             secsTextField.text = "00"
             secsTextField.textColor = .gray
-        }
-    }
-    @IBAction func allButton(_ sender: Any) {
-        thirdChoice = .all
-        timeHidden()
-        loopsShowing()
-        if allLoops == 1 {
-            loopsTextField.text = "1"
-            loopsTextField.textColor = .gray
-        }
-    }
-    @IBAction func iButton(_ sender: Any) {
-        thirdChoice = .i
-        timeHidden()
-        loopsShowing()
-        if iLoops == 1 {
-            loopsTextField.text = "1"
-            loopsTextField.textColor = .gray
-        }
-    }
-    @IBAction func mWeButton(_ sender: Any) {
-        thirdChoice = .mWe
-        timeHidden()
-        loopsShowing()
-        if mWeLoops == 1 {
-            loopsTextField.text = "1"
-            loopsTextField.textColor = .gray
+        } else {
+            minsTextField.textColor = .label
+            secsTextField.textColor = .label
         }
     }
     
+    @IBAction func statementsButtonTapped(_ sender: Any) {
+        loopsShowing()
+        timeHidden()
+    }
+    
+    
     @IBAction func minsTextFieldStartedEditing(_ sender: Any) {
+        
         minsTextField.textColor = .label
         secsTextField.textColor = .label
+
     }
     
     @IBAction func secsTextFieldStartedEditing(_ sender: Any) {
+        
         minsTextField.textColor = .label
         secsTextField.textColor = .label
     }
@@ -113,53 +110,52 @@ class Page3ViewController: UIViewController {
         loopsTextField.textColor = .label
     }
     
-    @IBAction func minsTextFieldFinishedEditing(_ sender: Any) {
-        if secsTextField.isTouchInside {
+    @IBAction func minsTextFieldEdited(_ sender: Any) {
+//        if secsTextField.isTouchInside {
+//            return
+//        }
+        
+        if minsTextField.text == "" {
             return
         }
+        
         if thirdChoice == .fullBody {
             fullBodyLoops = ((Int(minsTextField.text ?? "0")! * 60) + (Int(secsTextField.text ?? "0")!))
-            timeHidden()
+            UserDefaults.standard.set("\(minsTextField.text ?? "smth")", forKey: "fullBodyMins")
         } else if thirdChoice == .hubInHub {
             hubInHubLoops = ((Int(minsTextField.text ?? "0")! * 60) + (Int(secsTextField.text ?? "0")!))
-            timeHidden()
+            UserDefaults.standard.set("\(minsTextField.text ?? "smth")", forKey: "hubMins")
         }
     }
-    
-    @IBAction func secsTextFieldFinishedEditing(_ sender: Any) {
-        if minsTextField.isTouchInside {
+    @IBAction func secsTextFieldEditing(_ sender: Any) {
+//        if minsTextField.isTouchInside {
+//            return
+//        }
+        
+        if secsTextField.text == "" {
             return
         }
+        
         if thirdChoice == .fullBody {
             fullBodyLoops = ((Int(minsTextField.text ?? "0")! * 60) + (Int(secsTextField.text ?? "0")!))
-            timeHidden()
+            UserDefaults.standard.set("\(secsTextField.text ?? "smth")", forKey: "fullBodySecs")
         } else if thirdChoice == .hubInHub {
             hubInHubLoops = ((Int(minsTextField.text ?? "0")! * 60) + (Int(secsTextField.text ?? "0")!))
-            timeHidden()
+            UserDefaults.standard.set("\(secsTextField.text ?? "smth")", forKey: "hubSecs")
         }
     }
-    
-    @IBAction func loopsTextFieldFinishedEditing(_ sender: Any) {
-        if thirdChoice == .all {
-            allLoops = Int(loopsTextField.text!)!
-            loopsHidden()
-        } else if thirdChoice == .i {
-            iLoops = Int(loopsTextField.text!)!
-            loopsHidden()
-        } else if thirdChoice == .mWe {
-            mWeLoops = Int(loopsTextField.text!)!
-            loopsHidden()
-        }
+    @IBAction func loopsTextFieldEditing(_ sender: Any) {
+        statementsLoop = Int(loopsTextField.text!)!
+        loopsHidden()
     }
     
     
-    
-    @IBOutlet weak var minsTextField: UITextField!
     @IBOutlet weak var minsLabel: UILabel!
-    @IBOutlet weak var secsTextField: UITextField!
     @IBOutlet weak var secsLabel: UILabel!
-    @IBOutlet weak var loopsTextField: UITextField!
     @IBOutlet weak var loopsLabel: UILabel!
+    
+    var counter = 0
+    var audioNumber = 0
     
     func loopsHidden() {
         loopsTextField.isHidden = true
@@ -185,58 +181,80 @@ class Page3ViewController: UIViewController {
         secsLabel.isHidden = false
     }
     
-    func playFile(with name: String) {
+    func playAudioFile(_ index: Int) {
         
-        do {
-            let audioFile = Bundle.main.path(forResource: "\(fileName)", ofType: "mp3")
-            try playerPageThree = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioFile!) as URL)
-            playerPageThree?.prepareToPlay()
-            playerPageThree?.play()
-            
-        } catch {
-            print("Couldn't play file")
+        let soundFiles = NSMutableArray(array: [])
+        
+        if wheelIntroSwitch.isOn {
+            soundFiles.add(wheelIntro)
         }
+        if rimOneSwitch.isOn {
+            soundFiles.add(rimOneIntro)
+        }
+        soundFiles.add(rimOne)
+        if rimTwoSwitch.isOn {
+            soundFiles.add(rimTwoIntro)
+        }
+        soundFiles.add(rimTwo)
+        for _ in 1...Int(fullBodyLoops) {
+            soundFiles.add(silence)
+        }
+        if simpleMaSwitch.isOn {
+            soundFiles.add(rimThreePartOneIntro)
+        }
+        soundFiles.add(rimThreePartOne)
+        if advancedMaSwitch.isOn {
+            soundFiles.add(rimThreePartTwoIntro)
+        }
+        soundFiles.add(rimThreePartTwo)
+        if hubInHubSwitch.isOn {
+            soundFiles.add(hubInHubIntro)
+        }
+        soundFiles.add(hubInHubSection)
+        for _ in 1...Int(hubInHubLoops) {
+            soundFiles.add(silence)
+        }
+        soundFiles.add(rimFour)
+        for _ in 0...statementsLoop {
+            soundFiles.add(finalSection)
+        }
+        soundFiles.add(outro)
+        
+        wheelIntroSwitch.isEnabled = false
+        rimOneSwitch.isEnabled = false
+        rimTwoSwitch.isEnabled = false
+        simpleMaSwitch.isEnabled = false
+        advancedMaSwitch.isEnabled = false
+        hubInHubSwitch.isEnabled = false
+        
+        audioNumber = soundFiles.count
+        
+        do
+        {
+            playerPageThree = try AVAudioPlayer(contentsOf: soundFiles[index] as! URL)
+            playerPageThree!.delegate = self
+            playerPageThree?.play()
+            counter += 1
+        }
+        catch{print("error")}
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if firstChoice == .basic {
-            hubInHubLabel.isHidden = true
-            hubInHubSwitch.isHidden = true
-            hubInHub.isHidden = true
-            statementsLabel.isHidden = true
-            all.isHidden = true
-            i.isHidden = true
-            mWe.isHidden = true
-        }
+        playerPageThree?.delegate = self
+        
         pageThreeTitle.text = firstChoice.getTitle()
-        // Do any additional setup after loading the view.
-        
-        
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     
     @IBAction func playButton(_ sender: Any) {
         
+        loopsHidden()
+        timeHidden()
+        
         guard let player = playerPageThree else {
             playButton.setImage(UIImage(systemName: "pause"), for: .normal)
-            switch firstChoice {
-            case .consolidated:
-                fileName = "Consolidated Wheel of Awareness"
-                playFile(with: "\(fileName)")
-            case .full:
-                fileName = "Full Wheel of Awareness"
-                playFile(with: "\(fileName)")
-            case .basic:
-                fileName = "Basic Wheel of Awareness"
-                playFile(with: "\(fileName)")
-            case .plane:
-                fileName = "Full Wheel of Awareness and Plane of Possibilities"
-                playFile(with: "\(fileName)")
-            case .wheel:
-                break
-            }
+            playAudioFile(counter)
             return
         }
         
@@ -249,128 +267,13 @@ class Page3ViewController: UIViewController {
         }
         
     }
-    
-    @IBAction func goBackButton(_ sender: Any) {
-        playerPageThree?.currentTime -= 15
-    }
-    
-    @IBAction func goForwardButton(_ sender: Any) {
-        playerPageThree?.currentTime += 15
-    }
-    
-    @IBAction func changeSliderBar(_ sender: Any) {
-        guard let player = playerPageThree else {
-            return
-        }
-        playerPageThree!.currentTime = TimeInterval(sliderController.value) * player.duration
-        if playerPageThree!.isPlaying {
-            player.pause()
-            playButton.setImage(UIImage(systemName: "play"), for: .normal)
+        
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if counter < audioNumber - 1 || counter == audioNumber - 1 {
+            playAudioFile(counter)
         } else {
-            playerPageThree?.play()
-            playButton.setImage(UIImage(systemName: "pause"), for: .normal)
+            playerPageThree?.stop()
+            playButton.setImage(UIImage(systemName: "play"), for: .normal)
         }
-    }
-    
-    @objc func updateTime() {
-        guard let player = playerPageThree else {
-            sliderController.setValue(0, animated: false)
-            return
-        }
-        sliderController.setValue(Float(player.currentTime/player.duration), animated: true)
-        
-        if !wheelIntroSwitch.isOn {
-            playerPageThree!.currentTime = 195.1
-            playerPageThree?.play()
-            wheelIntroSwitch.isOn = true
-            wheelIntroSwitch.isHidden = true
-        }
-        if !rimOneSwitch.isOn && playerPageThree!.currentTime > 194.8 {
-            playerPageThree!.currentTime = 226.8
-            playerPageThree?.play()
-            rimOneSwitch.isOn = true
-            rimOneSwitch.isHidden = true
-        }
-        if !rimTwoSwitch.isOn && playerPageThree!.currentTime > 378 {
-            playerPageThree!.currentTime = 396
-            rimTwoSwitch.isOn = true
-            rimTwoSwitch.isHidden = true
-            playerPageThree?.play()
-        }
-        
-        if  playerPageThree!.currentTime > 675 && playerPageThree!.currentTime < 685 {
-            playerPageThree!.currentTime = 692
-            while fullBodyNumber <= fullBodyLoops {
-                if playerPageThree!.currentTime > 691 {
-                    playerPageThree!.currentTime = 690
-                    fullBodyNumber += 1
-                    playerPageThree!.play()
-                }
-            }
-            playerPageThree!.play()
-        }
-        
-        if !simpleMaSwitch.isOn && playerPageThree!.currentTime > 701.5 {
-            playerPageThree!.currentTime = 794.25
-            simpleMaSwitch.isOn = true
-            simpleMaSwitch.isHidden = true
-            playerPageThree?.play()
-        }
-        if !advancedMaSwitch.isOn && playerPageThree!.currentTime > 902.5 {
-            playerPageThree!.currentTime = 967.5
-            advancedMaSwitch.isOn = true
-            advancedMaSwitch.isHidden = true
-            playerPageThree?.play()
-        }
-        if !hubInHubSwitch!.isOn && playerPageThree!.currentTime > 1078 {
-            playerPageThree!.currentTime = 1155.7
-            hubInHubSwitch.isOn = true
-            hubInHubSwitch.isHidden = true
-            playerPageThree?.play()
-        }
-        
-        if  playerPageThree!.currentTime > 1171 && playerPageThree!.currentTime < 1175 {
-            playerPageThree!.currentTime = 1202
-            while hubInHubNumber <= hubInHubLoops {
-                if playerPageThree!.currentTime > 1201 {
-                    playerPageThree!.currentTime = 1200
-                    hubInHubNumber += 1
-                    playerPageThree!.play()
-                }
-            }
-            playerPageThree?.currentTime = 1320
-            playerPageThree!.play()
-        }
-        
-        if allNumber <= allLoops && playerPageThree!.currentTime > 1574.8 {
-            if playerPageThree!.currentTime > 1602 {
-                playerPageThree!.currentTime = 1574.8
-                playerPageThree!.play()
-                allNumber += 1
-            }
-        }
-        
-        if iNumber <= iLoops && playerPageThree!.currentTime > 1622 {
-            if playerPageThree!.currentTime > 1691 {
-                playerPageThree!.currentTime = 1622
-                playerPageThree!.play()
-                iNumber += 1
-            }
-        }
-        
-        if mWeNumber <= mWeLoops && playerPageThree!.currentTime > 1717 {
-            if playerPageThree!.currentTime > 1787 {
-                playerPageThree!.currentTime = 1717
-                playerPageThree!.play()
-                mWeNumber += 1
-            }
-        }
-        
-        
-        //        if !rimFourSwitch.isOn && playerPageThree!.currentTime > 1336.5 {
-        //            playerPageThree!.currentTime = 1366.3
-        //            rimFourSwitch.isOn = true
-        //            playerPageThree?.play()
-        //        }
     }
 }

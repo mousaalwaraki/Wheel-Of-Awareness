@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4134B25524BF5194005514BB /* Rim 2 Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24724BF5194005514BB /* Rim 2 Intro.mp3 */; };
+		4134B25624BF5194005514BB /* Rim 3 part 2 Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24824BF5194005514BB /* Rim 3 part 2 Intro.mp3 */; };
+		4134B25724BF5194005514BB /* Hub In Hub Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24924BF5194005514BB /* Hub In Hub Intro.mp3 */; };
+		4134B25824BF5194005514BB /* Rim 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24A24BF5194005514BB /* Rim 2.mp3 */; };
+		4134B25924BF5194005514BB /* Rim 3 part 1 Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24B24BF5194005514BB /* Rim 3 part 1 Intro.mp3 */; };
+		4134B25A24BF5194005514BB /* Rim 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24C24BF5194005514BB /* Rim 1.mp3 */; };
+		4134B25B24BF5194005514BB /* Rim 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24D24BF5194005514BB /* Rim 4.mp3 */; };
+		4134B25C24BF5194005514BB /* Outro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24E24BF5194005514BB /* Outro.mp3 */; };
+		4134B25D24BF5194005514BB /* Wheel Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B24F24BF5194005514BB /* Wheel Intro.mp3 */; };
+		4134B25E24BF5194005514BB /* Hub In Hub.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25024BF5194005514BB /* Hub In Hub.mp3 */; };
+		4134B25F24BF5194005514BB /* Rim 3 part 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25124BF5194005514BB /* Rim 3 part 1.mp3 */; };
+		4134B26024BF5194005514BB /* Rim 1 Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25224BF5194005514BB /* Rim 1 Intro.mp3 */; };
+		4134B26124BF5194005514BB /* Rim 3 part 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25324BF5194005514BB /* Rim 3 part 2.mp3 */; };
+		4134B26224BF5194005514BB /* Final Section.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25424BF5194005514BB /* Final Section.mp3 */; };
+		4134B26424BF5EE7005514BB /* Silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B26324BF5EE7005514BB /* Silence.mp3 */; };
 		415C5CB12448871700D3B952 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C5CB02448871700D3B952 /* Page3ViewController.swift */; };
 		4167E6BF246049040093A556 /* loopChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167E6BE246049040093A556 /* loopChoices.swift */; };
 		41A8609E243F20F7004F1FC5 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8609D243F20F7004F1FC5 /* Page4ViewController.swift */; };
@@ -29,6 +44,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4134B24724BF5194005514BB /* Rim 2 Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 2 Intro.mp3"; sourceTree = "<group>"; };
+		4134B24824BF5194005514BB /* Rim 3 part 2 Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 3 part 2 Intro.mp3"; sourceTree = "<group>"; };
+		4134B24924BF5194005514BB /* Hub In Hub Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hub In Hub Intro.mp3"; sourceTree = "<group>"; };
+		4134B24A24BF5194005514BB /* Rim 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 2.mp3"; sourceTree = "<group>"; };
+		4134B24B24BF5194005514BB /* Rim 3 part 1 Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 3 part 1 Intro.mp3"; sourceTree = "<group>"; };
+		4134B24C24BF5194005514BB /* Rim 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 1.mp3"; sourceTree = "<group>"; };
+		4134B24D24BF5194005514BB /* Rim 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 4.mp3"; sourceTree = "<group>"; };
+		4134B24E24BF5194005514BB /* Outro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Outro.mp3; sourceTree = "<group>"; };
+		4134B24F24BF5194005514BB /* Wheel Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wheel Intro.mp3"; sourceTree = "<group>"; };
+		4134B25024BF5194005514BB /* Hub In Hub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hub In Hub.mp3"; sourceTree = "<group>"; };
+		4134B25124BF5194005514BB /* Rim 3 part 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 3 part 1.mp3"; sourceTree = "<group>"; };
+		4134B25224BF5194005514BB /* Rim 1 Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 1 Intro.mp3"; sourceTree = "<group>"; };
+		4134B25324BF5194005514BB /* Rim 3 part 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 3 part 2.mp3"; sourceTree = "<group>"; };
+		4134B25424BF5194005514BB /* Final Section.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Section.mp3"; sourceTree = "<group>"; };
+		4134B26324BF5EE7005514BB /* Silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Silence.mp3; sourceTree = "<group>"; };
 		415C5CB02448871700D3B952 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		4167E6BE246049040093A556 /* loopChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopChoices.swift; sourceTree = "<group>"; };
 		41A8609D243F20F7004F1FC5 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4134B24624BF5194005514BB /* Custom Full Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				4134B25424BF5194005514BB /* Final Section.mp3 */,
+				4134B24924BF5194005514BB /* Hub In Hub Intro.mp3 */,
+				4134B25024BF5194005514BB /* Hub In Hub.mp3 */,
+				4134B24E24BF5194005514BB /* Outro.mp3 */,
+				4134B25224BF5194005514BB /* Rim 1 Intro.mp3 */,
+				4134B24C24BF5194005514BB /* Rim 1.mp3 */,
+				4134B24724BF5194005514BB /* Rim 2 Intro.mp3 */,
+				4134B24A24BF5194005514BB /* Rim 2.mp3 */,
+				4134B24B24BF5194005514BB /* Rim 3 part 1 Intro.mp3 */,
+				4134B25124BF5194005514BB /* Rim 3 part 1.mp3 */,
+				4134B24824BF5194005514BB /* Rim 3 part 2 Intro.mp3 */,
+				4134B25324BF5194005514BB /* Rim 3 part 2.mp3 */,
+				4134B24D24BF5194005514BB /* Rim 4.mp3 */,
+				4134B24F24BF5194005514BB /* Wheel Intro.mp3 */,
+				4134B26324BF5EE7005514BB /* Silence.mp3 */,
+			);
+			path = "Custom Full Wheel";
+			sourceTree = "<group>";
+		};
 		41E4B4202461107800FB9330 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +187,7 @@
 				41FB311A243E71610009AC51 /* Consolidated Wheel of Awareness.mp3 */,
 				41FB3118243E71610009AC51 /* Full Wheel of Awareness and Plane of Possibilities.mp3 */,
 				41FB3119243E71610009AC51 /* Full Wheel of Awareness.mp3 */,
+				4134B24624BF5194005514BB /* Custom Full Wheel */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -198,11 +251,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FB30FE243E62110009AC51 /* LaunchScreen.storyboard in Resources */,
+				4134B25724BF5194005514BB /* Hub In Hub Intro.mp3 in Resources */,
+				4134B25C24BF5194005514BB /* Outro.mp3 in Resources */,
+				4134B25E24BF5194005514BB /* Hub In Hub.mp3 in Resources */,
+				4134B25624BF5194005514BB /* Rim 3 part 2 Intro.mp3 in Resources */,
+				4134B25924BF5194005514BB /* Rim 3 part 1 Intro.mp3 in Resources */,
+				4134B26124BF5194005514BB /* Rim 3 part 2.mp3 in Resources */,
+				4134B26024BF5194005514BB /* Rim 1 Intro.mp3 in Resources */,
 				41FB30FB243E62110009AC51 /* Assets.xcassets in Resources */,
+				4134B25F24BF5194005514BB /* Rim 3 part 1.mp3 in Resources */,
 				41FB30F9243E62100009AC51 /* Main.storyboard in Resources */,
+				4134B25824BF5194005514BB /* Rim 2.mp3 in Resources */,
+				4134B25524BF5194005514BB /* Rim 2 Intro.mp3 in Resources */,
+				4134B26224BF5194005514BB /* Final Section.mp3 in Resources */,
 				41FB311B243E71610009AC51 /* Basic Wheel of Awareness.mp3 in Resources */,
 				41FB311C243E71610009AC51 /* Full Wheel of Awareness and Plane of Possibilities.mp3 in Resources */,
+				4134B26424BF5EE7005514BB /* Silence.mp3 in Resources */,
 				41FB311E243E71610009AC51 /* Consolidated Wheel of Awareness.mp3 in Resources */,
+				4134B25B24BF5194005514BB /* Rim 4.mp3 in Resources */,
+				4134B25A24BF5194005514BB /* Rim 1.mp3 in Resources */,
+				4134B25D24BF5194005514BB /* Wheel Intro.mp3 in Resources */,
 				41FB311D243E71610009AC51 /* Full Wheel of Awareness.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

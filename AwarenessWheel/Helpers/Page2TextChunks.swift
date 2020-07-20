@@ -37,7 +37,8 @@ func planeTitle() -> String {
     return "Plane"
 }
 func planeParagraph() -> String {
-    return "An advanced version of the Wheel of Awareness connecting to and explaining the Plane of Possibility framework. Dan highly recommends this version AFTER completing part 2 of Aware: The Science and Practice of Presence."
+    return " "
+//    "An advanced version of the Wheel of Awareness connecting to and explaining the Plane of Possibility framework. Dan highly recommends this version AFTER completing part 2 of Aware: The Science and Practice of Presence."
 }
 
 // Wheel

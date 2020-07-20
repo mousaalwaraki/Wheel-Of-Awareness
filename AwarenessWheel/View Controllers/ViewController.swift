@@ -36,6 +36,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        buttonOne.layer.cornerRadius = 12
+        buttonTwo.layer.cornerRadius = 12
+        buttonOne.backgroundColor = .systemBlue
+        buttonTwo.backgroundColor = .systemBlue
+    }
+    
     @IBAction func changeSliderBar(_ sender: Any) {
         guard let player = player else {
             return
@@ -76,8 +83,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     }
     
     @IBAction func basicButton(_ sender: Any) {
-        tapFunctions( .basic, "Basic Wheel Details", "Custom Basic Wheel")
+        tapFunctions( .basic, "Basic Wheel Details", "")
         player = nil
+        buttonTwo.isHidden = true
     }
     
     @IBAction func planeButton(_ sender: Any) {

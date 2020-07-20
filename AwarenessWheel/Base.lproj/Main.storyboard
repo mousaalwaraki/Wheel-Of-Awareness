@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xw9-ec-hMt">
-                                <rect key="frame" x="244" y="266.5" width="130" height="130"/>
+                                <rect key="frame" x="244" y="310.66666666666669" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="OlW-Fq-Fmq"/>
                                     <constraint firstAttribute="width" constant="130" id="fpQ-FF-w9L"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-Ee-sWK">
-                                <rect key="frame" x="266" y="486.5" width="75" height="75"/>
+                                <rect key="frame" x="266" y="530.66666666666663" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Axd-aN-gXJ"/>
                                     <constraint firstAttribute="height" constant="75" id="adi-BL-PK1"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-oq-1xl">
-                                <rect key="frame" x="85" y="351.5" width="180" height="180"/>
+                                <rect key="frame" x="85" y="395.66666666666669" width="180" height="180.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="efj-Rp-Owu"/>
                                     <constraint firstAttribute="width" constant="180" id="lbF-zd-i2h"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-2z-Kff">
-                                <rect key="frame" x="50" y="66.5" width="275" height="60"/>
+                                <rect key="frame" x="50" y="110.66666666666669" width="275" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HvF-Dq-GzF"/>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-SK-WCJ">
-                                <rect key="frame" x="50" y="146.5" width="275" height="60"/>
+                                <rect key="frame" x="50" y="190.66666666666666" width="275" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HAp-C5-2yM"/>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7e-Y4-yWf">
-                                <rect key="frame" x="50" y="236.5" width="100" height="100"/>
+                                <rect key="frame" x="50" y="280.66666666666669" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="dXc-La-jzA"/>
                                     <constraint firstAttribute="height" constant="100" id="moL-Ua-g1V"/>
@@ -86,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxJ-Wu-JXK">
-                                <rect key="frame" x="118" y="20" width="139" height="30"/>
+                                <rect key="frame" x="118" y="64" width="139" height="30"/>
                                 <state key="normal" title="Wheel of Awareness">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -95,30 +95,30 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-kG-aYZ">
-                                <rect key="frame" x="68" y="592.5" width="239" height="31"/>
+                                <rect key="frame" x="68" y="703.66666666666663" width="239" height="31"/>
                                 <connections>
                                     <action selector="changeSliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="lEz-ov-jNM"/>
                                 </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-fW-2gd">
-                                <rect key="frame" x="50.5" y="630" width="273.5" height="22.5"/>
+                                <rect key="frame" x="51" y="741.33333333333337" width="272.33333333333331" height="22.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkM-f0-1fg">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="22.333333333333332"/>
                                         <state key="normal" image="gobackward.15" catalog="system"/>
                                         <connections>
                                             <action selector="goBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcE-gC-jaa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R9-oL-q20">
-                                        <rect key="frame" x="129" y="0.0" width="15.5" height="22.5"/>
+                                        <rect key="frame" x="128.66666666666666" y="0.0" width="15" height="22.333333333333332"/>
                                         <state key="normal" image="play" catalog="system"/>
                                         <connections>
                                             <action selector="playPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Qh-u0-qi0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lv-6R-my7">
-                                        <rect key="frame" x="253.5" y="0.0" width="20" height="22.5"/>
+                                        <rect key="frame" x="252.66666666666666" y="0.0" width="19.666666666666657" height="22.333333333333332"/>
                                         <state key="normal" image="goforward.15" catalog="system"/>
                                         <connections>
                                             <action selector="goForwardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Blr-W1-W9Q"/>
@@ -175,96 +175,83 @@
             <objects>
                 <viewController storyboardIdentifier="wheelDetailsViewController" id="aw0-GH-55R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5QW-kj-zyg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yok-u7-Scs">
-                                <rect key="frame" x="20" y="112" width="374" height="702"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Why is this practice important? 
-
-Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimiz- es self-organization. 
-
-Integration is the linkage of differentiated parts, such as connecting the left and right sides of the brain, or embracing and honoring differences and cultivating compassionate commu- nication. By exploring our mental lives, we can move toward a healthy flow of integration, which creates harmony in our lives. 
-
-When not moving toward integration, complex systems like our lives move toward ei- ther chaos or rigidity, rather than the flexible harmonious flow of integrative wellbeing. 
-
-One way to promote integration is with the Wheel of Awareness. In this practice, the center hub of our metaphoric wheel represents the “knowing” of being conscious while the ele- ments on the rim stand for the “known.” Known elements on the external rim include: 
-
-	•	What we see, hear, smell, taste and touch  
-	•	What we sense from our inner bodily sensations  
-	•	What we experience with our mental activities, such as feelings, thoughts or memories  
-	•	Our sense of relational connections—with other people and with the planet 
-
-The power of doing the Wheel of Awareness practice is to integrate consciousness by differ- entiating hub from rim, and systematically linking these various elements intentionally with the movement of a spoke of attention. This integration of consciousness allows us to free the mind to learn to move recurrent thoughts and moods of the rim toward an open space of knowing – the hub. Practicing the Wheel of Awareness can liberate the mind from ingrained patterns of cognition and emotion and help you emerge with a more expansive sense of awareness.  </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is it Important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vc-bX-fFJ">
-                                <rect key="frame" x="131" y="69" width="153" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is it Important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vc-bX-fFJ">
+                                <rect key="frame" x="111" y="63.999999999999993" width="153" height="20.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="afv-T8-c0f">
+                                <rect key="frame" x="20" y="104.66666666666669" width="335" height="707.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Why is this practice important? 
+
+Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimizes self-organization. 
+
+Integration is the linkage of differentiated parts, such as connecting the left and right sides of the brain, or embracing and honoring differences and cultivating compassionate communication. By exploring our mental lives, we can move toward a healthy flow of integration, which creates harmony in our lives. 
+
+When not moving toward integration, complex systems like our lives move toward either chaos or rigidity, rather than the flexible harmonious flow of integrative wellbeing. 
+
+One way to promote integration is with the Wheel of Awareness. In this practice, the center hub of our metaphoric wheel represents the “knowing” of being conscious while the elements on the rim stand for the “known.” Known elements on the external rim include: 
+
+	•	What we see, hear, smell, taste and touch  
+	•	What we sense from our inner bodily sensations  
+	•	What we experience with our mental activities, such as feelings, thoughts or memories  
+	•	Our sense of relational connections with other people and with the planet 
+
+The power of doing the Wheel of Awareness practice is to integrate consciousness by differentiating hub from rim, and systematically linking these various elements intentionally with the movement of a spoke of attention. This integration of consciousness allows us to free the mind to learn to move recurrent thoughts and moods of the rim toward an open space of knowing, the hub. Practicing the Wheel of Awareness can liberate the mind from ingrained patterns of cognition and emotion and help you emerge with a more expansive sense of awareness.  </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="afv-T8-c0f" secondAttribute="bottom" id="3Fu-Kk-UB2"/>
+                            <constraint firstItem="afv-T8-c0f" firstAttribute="top" secondItem="5vc-bX-fFJ" secondAttribute="bottom" constant="20" id="9vJ-8M-oPW"/>
+                            <constraint firstItem="guY-Km-RyN" firstAttribute="trailing" secondItem="afv-T8-c0f" secondAttribute="trailing" constant="20" id="B7h-g6-Rj5"/>
+                            <constraint firstItem="5vc-bX-fFJ" firstAttribute="top" secondItem="guY-Km-RyN" secondAttribute="top" constant="20" id="GxF-iw-QdW"/>
+                            <constraint firstItem="5vc-bX-fFJ" firstAttribute="centerX" secondItem="5QW-kj-zyg" secondAttribute="centerX" id="jq4-Hs-g9L"/>
+                            <constraint firstItem="afv-T8-c0f" firstAttribute="leading" secondItem="guY-Km-RyN" secondAttribute="leading" constant="20" id="xug-wL-yAi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="guY-Km-RyN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zeo-RE-eue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="768"/>
+            <point key="canvasLocation" x="905" y="767"/>
         </scene>
         <!--customViewController-->
         <scene sceneID="MEO-w8-UR0">
             <objects>
                 <viewController storyboardIdentifier="customViewController" title="customViewController" id="JtK-FS-oI6" customClass="Page3ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FIC-EI-Sna">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is it Important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrC-83-Tms">
-                                <rect key="frame" x="111" y="20" width="153" height="20.5"/>
+                                <rect key="frame" x="111.33333333333333" y="64" width="152.66666666666669" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XnF-WF-wng">
-                                <rect key="frame" x="68" y="597" width="239" height="31"/>
-                                <connections>
-                                    <action selector="changeSliderBar:" destination="JtK-FS-oI6" eventType="valueChanged" id="OB9-mR-2OM"/>
-                                </connections>
-                            </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-Cy-rTB" userLabel="Player Stack">
-                                <rect key="frame" x="42" y="634.5" width="292.5" height="22.5"/>
+                                <rect key="frame" x="42" y="746" width="292.66666666666669" height="22"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CG-aV-p2O">
-                                        <rect key="frame" x="0.0" y="0.0" width="79" height="22.5"/>
-                                        <state key="normal" image="gobackward.15" catalog="system"/>
-                                        <connections>
-                                            <action selector="goBackButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="pMb-X8-PJr"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s0-aA-GZw">
-                                        <rect key="frame" x="107" y="0.0" width="78.5" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="292.66666666666669" height="22"/>
                                         <state key="normal" image="play" catalog="system"/>
                                         <connections>
                                             <action selector="playButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="8Nv-hc-3E8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-bw-Ems">
-                                        <rect key="frame" x="213.5" y="0.0" width="79" height="22.5"/>
-                                        <state key="normal" image="goforward.15" catalog="system"/>
-                                        <connections>
-                                            <action selector="goForwardButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="a1t-eY-QV3"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="192" translatesAutoresizingMaskIntoConstraints="NO" id="UhN-8W-n2w" userLabel="Wheel Stack">
-                                <rect key="frame" x="20" y="90.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="134.33333333333334" width="335" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o9-vN-9wd">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="31"/>
@@ -278,7 +265,7 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="hDP-Xs-1wf" userLabel="Rim 1">
-                                <rect key="frame" x="20" y="141.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="185.33333333333334" width="335" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Rim 1 Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-Tl-F8v">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
@@ -292,7 +279,7 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-oM-j9m" userLabel="Rim 2">
-                                <rect key="frame" x="20" y="192.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="236.33333333333334" width="335" height="31.000000000000028"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Rim 2 Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-RB-93i">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
@@ -306,14 +293,14 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-MY-BaP">
-                                <rect key="frame" x="20" y="426.5" width="77" height="30"/>
+                                <rect key="frame" x="20" y="470.33333333333331" width="77" height="30"/>
                                 <state key="normal" title="Hub in Hub"/>
                                 <connections>
                                     <action selector="hubInHubButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="p0j-ZK-wfn"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qzL-ep-QTp" userLabel="Simple MA">
-                                <rect key="frame" x="20" y="283.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="327.33333333333331" width="335" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple MA Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-vD-MzZ" userLabel="Simple MA label">
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="31"/>
@@ -327,7 +314,7 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-ao-KQk" userLabel="Advanced MA">
-                                <rect key="frame" x="20" y="334.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="378.33333333333331" width="335" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Advanced MA Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNk-5R-EJ5">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="31"/>
@@ -341,46 +328,14 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-4c-rzm">
-                                <rect key="frame" x="20" y="233.5" width="64" height="30"/>
+                                <rect key="frame" x="20" y="277.33333333333331" width="64" height="30"/>
                                 <state key="normal" title="Full Body"/>
                                 <connections>
                                     <action selector="fullBodyButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="HQa-lE-eAi"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="lJQ-Uc-ANS" userLabel="Statements Stack">
-                                <rect key="frame" x="20" y="466.5" width="335" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statements:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fV-ix-e5X">
-                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slz-1d-yfz">
-                                        <rect key="frame" x="139.5" y="0.0" width="36.5" height="30"/>
-                                        <state key="normal" title="All"/>
-                                        <connections>
-                                            <action selector="allButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="4N1-ed-5JY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgg-r0-O7u">
-                                        <rect key="frame" x="223" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="I "/>
-                                        <connections>
-                                            <action selector="iButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="jzt-S1-Kpu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHr-uH-aoP">
-                                        <rect key="frame" x="300" y="0.0" width="35" height="30"/>
-                                        <state key="normal" title="MWe"/>
-                                        <connections>
-                                            <action selector="mWeButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="ulG-ik-0pb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-m1-e8k" userLabel="Hub Stack">
-                                <rect key="frame" x="20" y="385.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="429.33333333333331" width="335" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hub In Hub Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkG-y0-xcv">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="31"/>
@@ -394,13 +349,13 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILs-pl-GZT">
-                                <rect key="frame" x="250.5" y="556.5" width="37.5" height="20.5"/>
+                                <rect key="frame" x="250.33333333333334" y="600.33333333333337" width="37.666666666666657" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70o-PQ-3a1">
-                                <rect key="frame" x="138.5" y="556.5" width="42" height="20.5"/>
+                                <rect key="frame" x="138.33333333333334" y="600.33333333333337" width="42" height="20.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="jsJ-Mt-Pu0"/>
                                 </constraints>
@@ -409,55 +364,62 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-Vg-bHo">
-                                <rect key="frame" x="162.5" y="543" width="50" height="34"/>
+                                <rect key="frame" x="162.66666666666666" y="587" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="T2d-1f-q8e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="LoopsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingChanged" id="dJ5-1V-EyF"/>
-                                    <action selector="loopsTextFieldFinishedEditing:" destination="JtK-FS-oI6" eventType="editingDidEnd" id="QTQ-oV-1vk"/>
+                                    <action selector="LoopsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingDidBegin" id="AmV-nT-TF8"/>
+                                    <action selector="loopsTextFieldEditing:" destination="JtK-FS-oI6" eventType="editingChanged" id="420-8c-iR8"/>
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3w-7Q-3eG">
-                                <rect key="frame" x="217.5" y="551.5" width="47" height="20.5"/>
+                                <rect key="frame" x="217.66666666666666" y="595.33333333333337" width="46.666666666666657" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-qT-4S9">
-                                <rect key="frame" x="78.5" y="543" width="50" height="34"/>
+                                <rect key="frame" x="78.333333333333329" y="587" width="49.999999999999986" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="lFD-ls-lzi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="minsTextFieldFinishedEditing:" destination="JtK-FS-oI6" eventType="editingDidEnd" id="83g-yY-pgX"/>
-                                    <action selector="minsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingChanged" id="09f-aD-mDV"/>
+                                    <action selector="minsTextFieldEdited:" destination="JtK-FS-oI6" eventType="editingChanged" id="gaz-a3-XjA"/>
+                                    <action selector="minsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingDidBegin" id="TbR-l6-AN8"/>
                                 </connections>
                             </textField>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfy-VA-lhe">
-                                <rect key="frame" x="190.5" y="543" width="50" height="34"/>
+                                <rect key="frame" x="190.33333333333334" y="587" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="wyB-kg-AoW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="secsTextFieldFinishedEditing:" destination="JtK-FS-oI6" eventType="editingDidEnd" id="69z-dr-eD5"/>
-                                    <action selector="secsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingChanged" id="8Dc-qt-74Z"/>
+                                    <action selector="secsTextFieldEditing:" destination="JtK-FS-oI6" eventType="editingChanged" id="8D8-2O-LCE"/>
+                                    <action selector="secsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingDidBegin" id="m4B-xL-Dex"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-27-Hgt">
+                                <rect key="frame" x="20" y="510.33333333333326" width="161" height="30"/>
+                                <state key="normal" title="Statements of Intention"/>
+                                <connections>
+                                    <action selector="hubInHubButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="daJ-00-Kho"/>
+                                    <action selector="statementsButtonTapped:" destination="JtK-FS-oI6" eventType="touchUpInside" id="RiR-1s-XGQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eUO-Vg-bHo" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="46.5" id="3Cg-J0-sDL"/>
                             <constraint firstItem="Bfy-VA-lhe" firstAttribute="leading" secondItem="70o-PQ-3a1" secondAttribute="trailing" constant="10" id="5w2-2P-bl4"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="bottom" secondItem="Vd1-Cy-rTB" secondAttribute="bottom" constant="-30" id="6YF-yA-eGC"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="FaM-qT-4S9" secondAttribute="bottom" constant="20" id="6vM-kG-2dI"/>
+                            <constraint firstItem="FaM-qT-4S9" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="46.5" id="6hJ-gd-gWX"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="v1q-oM-j9m" secondAttribute="trailing" constant="20" id="841-FK-eFg"/>
-                            <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="XnF-WF-wng" secondAttribute="trailing" constant="70" id="8ZI-sj-VDY"/>
                             <constraint firstItem="70o-PQ-3a1" firstAttribute="leading" secondItem="FaM-qT-4S9" secondAttribute="trailing" constant="10" id="Cd1-2q-zwc"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Mfs-4c-rzm" secondAttribute="trailing" symbolic="YES" id="DhW-bZ-72X"/>
                             <constraint firstItem="fhd-MY-BaP" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="EKX-PC-Qmk"/>
@@ -467,118 +429,90 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="UhN-8W-n2w" secondAttribute="trailing" constant="20" id="JdT-B6-89m"/>
                             <constraint firstItem="uGT-ao-KQk" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="Jm2-rv-cMV"/>
                             <constraint firstItem="hDP-Xs-1wf" firstAttribute="top" secondItem="UhN-8W-n2w" secondAttribute="bottom" constant="20" id="KLk-lI-Wfs"/>
+                            <constraint firstItem="E3w-7Q-3eG" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="55" id="M4X-HR-1aB"/>
                             <constraint firstItem="NrC-83-Tms" firstAttribute="top" secondItem="bAG-GH-8lC" secondAttribute="top" constant="20" id="MYh-7r-zGg"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="qzL-ep-QTp" secondAttribute="trailing" constant="20" id="QJx-Ml-bfG"/>
                             <constraint firstItem="fhd-MY-BaP" firstAttribute="top" secondItem="qjb-m1-e8k" secondAttribute="bottom" constant="10" id="Qj2-Tt-eVW"/>
                             <constraint firstItem="eUO-Vg-bHo" firstAttribute="centerX" secondItem="FIC-EI-Sna" secondAttribute="centerX" id="QsL-zl-Ipw"/>
                             <constraint firstItem="Mfs-4c-rzm" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="RaE-su-ERF"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="eUO-Vg-bHo" secondAttribute="bottom" constant="20" id="SLS-za-7FK"/>
                             <constraint firstItem="qzL-ep-QTp" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="SWy-B5-3IL"/>
+                            <constraint firstItem="8N4-27-Hgt" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="T5C-mH-kzw"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="hDP-Xs-1wf" secondAttribute="trailing" constant="20" id="Ue7-Tm-23Y"/>
+                            <constraint firstItem="8N4-27-Hgt" firstAttribute="top" secondItem="fhd-MY-BaP" secondAttribute="bottom" constant="10" id="Vmd-3A-DwD"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="uGT-ao-KQk" secondAttribute="trailing" constant="20" id="Xuo-h7-MLY"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="ILs-pl-GZT" secondAttribute="bottom" constant="20" id="a1H-vy-xDG"/>
                             <constraint firstItem="E3w-7Q-3eG" firstAttribute="leading" secondItem="eUO-Vg-bHo" secondAttribute="trailing" constant="5" id="afD-m1-BEG"/>
+                            <constraint firstItem="ILs-pl-GZT" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="60" id="bap-0a-m5m"/>
                             <constraint firstItem="qjb-m1-e8k" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="c6V-9T-Ubg"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="ILs-pl-GZT" secondAttribute="trailing" constant="87" id="drn-Ep-ZML"/>
-                            <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="lJQ-Uc-ANS" secondAttribute="trailing" constant="20" id="e3v-Gr-iWW"/>
+                            <constraint firstItem="Bfy-VA-lhe" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="46.5" id="ekb-gL-rcM"/>
                             <constraint firstItem="v1q-oM-j9m" firstAttribute="top" secondItem="hDP-Xs-1wf" secondAttribute="bottom" constant="20" id="hM7-OJ-Egw"/>
+                            <constraint firstItem="70o-PQ-3a1" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="60" id="jIn-bJ-3XV"/>
                             <constraint firstItem="ILs-pl-GZT" firstAttribute="leading" secondItem="Bfy-VA-lhe" secondAttribute="trailing" constant="10" id="khS-3k-Zpm"/>
                             <constraint firstItem="hDP-Xs-1wf" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="lH3-Zj-Lwm"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" secondItem="qjb-m1-e8k" secondAttribute="trailing" constant="20" id="lIq-EJ-efB"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="E3w-7Q-3eG" secondAttribute="bottom" constant="25" id="nZv-l0-fKL"/>
                             <constraint firstItem="uGT-ao-KQk" firstAttribute="top" secondItem="qzL-ep-QTp" secondAttribute="bottom" constant="20" id="ovZ-1f-JA1"/>
                             <constraint firstItem="Vd1-Cy-rTB" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="42" id="pSp-BC-vqg"/>
                             <constraint firstItem="qjb-m1-e8k" firstAttribute="top" secondItem="uGT-ao-KQk" secondAttribute="bottom" constant="20" id="pdK-7W-ctN"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="Bfy-VA-lhe" secondAttribute="bottom" constant="20" id="qQR-P8-gKV"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="top" secondItem="70o-PQ-3a1" secondAttribute="bottom" constant="20" id="qev-hS-gto"/>
                             <constraint firstItem="qzL-ep-QTp" firstAttribute="top" secondItem="Mfs-4c-rzm" secondAttribute="bottom" constant="20" id="raa-hE-aqh"/>
-                            <constraint firstItem="lJQ-Uc-ANS" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="sCG-Wx-ncD"/>
-                            <constraint firstItem="lJQ-Uc-ANS" firstAttribute="top" secondItem="fhd-MY-BaP" secondAttribute="bottom" constant="10" id="tZi-x4-rNd"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="bottom" secondItem="Vd1-Cy-rTB" secondAttribute="bottom" constant="10" id="tmi-ef-84b"/>
                             <constraint firstItem="UhN-8W-n2w" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="20" id="uzq-LO-7cF"/>
                             <constraint firstItem="NrC-83-Tms" firstAttribute="centerX" secondItem="FIC-EI-Sna" secondAttribute="centerX" id="vfx-24-cEI"/>
                             <constraint firstItem="Mfs-4c-rzm" firstAttribute="top" secondItem="v1q-oM-j9m" secondAttribute="bottom" constant="10" id="y9A-dG-hDA"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fhd-MY-BaP" secondAttribute="trailing" symbolic="YES" id="yzF-aP-BwA"/>
-                            <constraint firstItem="XnF-WF-wng" firstAttribute="leading" secondItem="bAG-GH-8lC" secondAttribute="leading" constant="70" id="zZ2-su-IQR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bAG-GH-8lC"/>
                     </view>
                     <navigationItem key="navigationItem" id="cMi-Cp-ahq"/>
                     <connections>
                         <outlet property="advancedMaSwitch" destination="98d-cC-y21" id="tdU-cJ-F0H"/>
-                        <outlet property="all" destination="Slz-1d-yfz" id="f3U-Lf-S32"/>
                         <outlet property="hubInHub" destination="fhd-MY-BaP" id="ddc-R2-BFu"/>
                         <outlet property="hubInHubLabel" destination="hkG-y0-xcv" id="EqJ-A9-lBP"/>
                         <outlet property="hubInHubSwitch" destination="RdW-5l-jfx" id="tWE-FI-nG7"/>
-                        <outlet property="i" destination="dgg-r0-O7u" id="dhF-Bt-Osa"/>
                         <outlet property="loopsLabel" destination="E3w-7Q-3eG" id="JVk-i5-2kt"/>
-                        <outlet property="loopsTextField" destination="eUO-Vg-bHo" id="ITM-WE-Tul"/>
-                        <outlet property="mWe" destination="RHr-uH-aoP" id="qzd-Ri-4vx"/>
+                        <outlet property="loopsTextField" destination="eUO-Vg-bHo" id="XMv-08-eT9"/>
                         <outlet property="minsLabel" destination="70o-PQ-3a1" id="mWD-mE-31H"/>
-                        <outlet property="minsTextField" destination="FaM-qT-4S9" id="VDi-Th-pXq"/>
+                        <outlet property="minsTextField" destination="FaM-qT-4S9" id="twc-UI-kZg"/>
                         <outlet property="pageThreeTitle" destination="NrC-83-Tms" id="NbC-8C-iUi"/>
                         <outlet property="playButton" destination="0s0-aA-GZw" id="vcR-da-GKn"/>
                         <outlet property="rimOneSwitch" destination="IcA-kJ-WOT" id="inR-vo-hUN"/>
                         <outlet property="rimTwoSwitch" destination="XF2-em-w9z" id="323-2k-0x4"/>
                         <outlet property="secsLabel" destination="ILs-pl-GZT" id="dhb-mv-fqb"/>
-                        <outlet property="secsTextField" destination="Bfy-VA-lhe" id="2n8-qZ-zsX"/>
-                        <outlet property="seekBack" destination="2CG-aV-p2O" id="CUv-sX-0CB"/>
-                        <outlet property="seekForward" destination="g4g-bw-Ems" id="cEy-FY-jMo"/>
+                        <outlet property="secsTextField" destination="Bfy-VA-lhe" id="mNe-3I-4yc"/>
                         <outlet property="simpleMaSwitch" destination="hKu-xU-03e" id="1Fo-PZ-qu0"/>
-                        <outlet property="sliderController" destination="XnF-WF-wng" id="Tn2-BW-SLi"/>
-                        <outlet property="statementsLabel" destination="5fV-ix-e5X" id="4dK-if-3Q6"/>
                         <outlet property="wheelIntroSwitch" destination="TIv-od-VJ2" id="Vrr-vd-Bu8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDt-5j-2qK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="767"/>
+            <point key="canvasLocation" x="136.80000000000001" y="766.99507389162568"/>
         </scene>
         <!--Page2 View Controller-->
         <scene sceneID="Ncp-8b-Yvj">
             <objects>
                 <viewController id="FbP-Lo-4W2" customClass="Page2ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCy-Bg-oE8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 3.17.58 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-2g-dZg">
-                                <rect key="frame" x="-24" y="386" width="461" height="1162"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="402" id="B6u-e1-TGz"/>
-                                    <constraint firstAttribute="width" constant="461" id="kvS-1k-ASr"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-AI-N8B">
-                                <rect key="frame" x="186" y="20" width="42" height="20.5"/>
+                                <rect key="frame" x="166.66666666666666" y="20" width="42" height="20.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yho-Jc-4B4">
-                                <rect key="frame" x="20" y="60.5" width="374" height="444"/>
-                                <string key="text">Why is this practice important? 
-
-Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimiz- es self-organization. 
-
-Integration is the linkage of differentiated parts, such as connecting the left and right sides of the brain, or embracing and honoring differences and cultivating compassionate commu- nication. By exploring our mental lives, we can move toward a healthy flow of integration, which creates harmony in our lives. 
-
-When not moving toward integration, complex systems like our lives move toward ei- ther chaos or rigidity, rather than the flexible harmonious flow of integrative wellbeing. 
-
-One way to promote integration is with the Wheel of Awareness. In this practice, the center hub of our metaphoric wheel represents the “knowing” of being conscious while the ele- ments on the rim stand for the “known.” Known elements on the external rim include: 
-
-	•	What we see, hear, smell, taste and touch  
-	•	What we sense from our inner bodily sensations </string>
+                                <rect key="frame" x="26" y="60.666666666666671" width="323" height="200.66666666666663"/>
+                                <string key="text">We are happy to share our Wheel of Awareness with you and hope that you will find it useful. \n \nThe regular practice of the Wheel of Awareness strengthens your mind by integrating your consciousness and empowering you to live a full and vital life. \n \nMindsight is defined as a skill of the mind that promotes insight, empathy and integration. \n\nThis is a mindsight-building practice. \n\nThe Wheel of Awareness is the basis for a reflective practice which helps us direct our attention and improve our ability to focus on the individual aspects of our internal and external worlds, which are key components of a healthy mind. \n\nIf you have any questions, please contact us at info@drdansiegel.com. \n\nWe appreciate having you in our Mindsight community!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-ir-zTs">
-                                <rect key="frame" x="20" y="1328" width="170" height="60"/>
+                                <rect key="frame" x="20" y="504" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Gui-oV-55A"/>
-                                    <constraint firstAttribute="width" constant="170" id="JH2-r8-dMq"/>
+                                    <constraint firstAttribute="height" constant="60" id="Roj-Ez-yaa"/>
+                                    <constraint firstAttribute="width" constant="160" id="Twl-MZ-Kl5"/>
                                 </constraints>
                                 <state key="normal" title="1. First Five Senses">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -588,11 +522,11 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM5-19-s71">
-                                <rect key="frame" x="224" y="1328" width="170" height="60"/>
+                                <rect key="frame" x="195" y="504" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="Eyx-Y6-VAB"/>
-                                    <constraint firstAttribute="height" constant="60" id="KtD-Ia-U7Y"/>
+                                    <constraint firstAttribute="width" constant="160" id="Dow-YZ-IY2"/>
+                                    <constraint firstAttribute="height" constant="60" id="cgY-0W-Jh2"/>
                                 </constraints>
                                 <state key="normal" title="2. Inner Sensations">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -602,11 +536,11 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cva-SI-4tL">
-                                <rect key="frame" x="20" y="1407" width="170" height="60"/>
+                                <rect key="frame" x="20" y="574" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="g44-tt-tM1"/>
-                                    <constraint firstAttribute="width" constant="170" id="vB4-tG-3ZQ"/>
+                                    <constraint firstAttribute="width" constant="160" id="mTM-Fx-i8L"/>
+                                    <constraint firstAttribute="height" constant="60" id="mrX-Oi-xwJ"/>
                                 </constraints>
                                 <state key="normal" title="3. Mental Activities">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -616,11 +550,11 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDv-lp-pyJ">
-                                <rect key="frame" x="224" y="1488" width="170" height="60"/>
+                                <rect key="frame" x="195" y="644" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="FOf-5P-xUv"/>
-                                    <constraint firstAttribute="height" constant="60" id="QKX-Bc-GGz"/>
+                                    <constraint firstAttribute="width" constant="160" id="DTS-wL-fRx"/>
+                                    <constraint firstAttribute="height" constant="60" id="OJB-BA-AVf"/>
                                 </constraints>
                                 <state key="normal" title="6. Kind Intentions">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -630,11 +564,11 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK6-L7-0wZ">
-                                <rect key="frame" x="224" y="1407" width="170" height="60"/>
+                                <rect key="frame" x="195" y="574" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="dGh-J7-7hI"/>
-                                    <constraint firstAttribute="height" constant="60" id="rsG-sY-yK4"/>
+                                    <constraint firstAttribute="width" constant="160" id="2U3-p2-qGu"/>
+                                    <constraint firstAttribute="height" constant="60" id="JHM-o6-wgc"/>
                                 </constraints>
                                 <state key="normal" title="4. Hub In Hub">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -644,11 +578,11 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEa-o4-22H">
-                                <rect key="frame" x="20" y="1488" width="170" height="60"/>
+                                <rect key="frame" x="20" y="644" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="mIF-h9-s1W"/>
-                                    <constraint firstAttribute="width" constant="170" id="rio-q2-BfN"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ahg-k5-ypz"/>
+                                    <constraint firstAttribute="width" constant="160" id="LTI-Zc-spL"/>
                                 </constraints>
                                 <state key="normal" title="5. Relational Sense">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -658,89 +592,88 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlanePic" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-Fh-Zlr">
-                                <rect key="frame" x="20" y="891" width="183" height="159"/>
+                                <rect key="frame" x="10" y="129" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="s4u-aU-hMp"/>
-                                    <constraint firstAttribute="height" constant="159" id="tCn-sX-fne"/>
+                                    <constraint firstAttribute="width" constant="160" id="g7w-Ac-fEx"/>
+                                    <constraint firstAttribute="height" constant="160" id="lM4-u4-VOM"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.49.52 PM" translatesAutoresizingMaskIntoConstraints="NO" id="gjc-Q5-psn">
-                                <rect key="frame" x="211" y="891" width="183" height="159"/>
+                                <rect key="frame" x="179" y="129" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="159" id="2YW-hi-E4R"/>
-                                    <constraint firstAttribute="width" constant="183" id="2iI-No-CL5"/>
+                                    <constraint firstAttribute="width" constant="160" id="N1m-SI-jBK"/>
+                                    <constraint firstAttribute="height" constant="160" id="T6q-x5-P5g"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.50.02 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-Xf-z1P">
-                                <rect key="frame" x="20" y="1033" width="183" height="159"/>
+                                <rect key="frame" x="10" y="299" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="PYt-AX-skD"/>
-                                    <constraint firstAttribute="height" constant="159" id="m6L-4B-Ttv"/>
+                                    <constraint firstAttribute="height" constant="160" id="SZS-DZ-YMf"/>
+                                    <constraint firstAttribute="width" constant="160" id="qiY-Rw-BDc"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.50.21 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-hX-uIQ">
-                                <rect key="frame" x="211" y="1033" width="183" height="159"/>
+                                <rect key="frame" x="189" y="299" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="159" id="cEZ-67-fZz"/>
-                                    <constraint firstAttribute="width" constant="183" id="eop-e4-pmS"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaneThreePic" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-Sa-hpl">
-                                <rect key="frame" x="20" y="1170" width="183" height="159"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="5yp-3y-Wav"/>
-                                    <constraint firstAttribute="height" constant="159" id="kUl-gd-dzb"/>
+                                    <constraint firstAttribute="width" constant="160" id="Y4Y-H5-h1t"/>
+                                    <constraint firstAttribute="height" constant="160" id="zVh-Qz-us5"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaneTwoPic" translatesAutoresizingMaskIntoConstraints="NO" id="2WL-i9-tQP">
-                                <rect key="frame" x="211" y="1170" width="183" height="159"/>
+                                <rect key="frame" x="205" y="469" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="dqT-I5-hpd"/>
-                                    <constraint firstAttribute="height" constant="159" id="x3b-M0-RBp"/>
+                                    <constraint firstAttribute="width" constant="160" id="4Wa-4l-sdy"/>
+                                    <constraint firstAttribute="height" constant="160" id="Y9r-Lb-PXr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaneThreePic" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-Sa-hpl">
+                                <rect key="frame" x="10" y="469" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Wi7-Dy-SEG"/>
+                                    <constraint firstAttribute="width" constant="160" id="t1C-0J-SQd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 3.17.58 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-2g-dZg">
+                                <rect key="frame" x="0.0" y="499" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Fw3-x4-qh1"/>
+                                    <constraint firstAttribute="height" constant="220" id="cp9-Zl-JCn"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="hSy-AI-N8B" firstAttribute="centerX" secondItem="SCy-Bg-oE8" secondAttribute="centerX" id="03e-cS-6W5"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="KEa-o4-22H" secondAttribute="bottom" constant="20" id="3cE-qi-ZAm"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="Jdd-2g-dZg" secondAttribute="bottom" constant="20" id="8WO-h8-irW"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="2WL-i9-tQP" secondAttribute="bottom" constant="239" id="9O0-eF-OlA"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Uu4-Xf-z1P" secondAttribute="bottom" constant="376" id="AMa-Ey-vcO"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="IDv-lp-pyJ" secondAttribute="bottom" constant="20" id="CR0-qx-Zcl"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="fM5-19-s71" secondAttribute="trailing" constant="20" id="DE6-mm-XsY"/>
-                            <constraint firstItem="yho-Jc-4B4" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="EbH-rc-cI5"/>
-                            <constraint firstItem="fK6-L7-0wZ" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="224" id="JWd-GF-vlg"/>
-                            <constraint firstItem="gjc-Q5-psn" firstAttribute="leading" secondItem="2yW-Fh-Zlr" secondAttribute="trailing" constant="8" id="Kb3-9t-yYe"/>
-                            <constraint firstItem="KEa-o4-22H" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="Kq2-in-jTw"/>
-                            <constraint firstItem="n9a-ir-zTs" firstAttribute="baseline" secondItem="fM5-19-s71" secondAttribute="baseline" id="N0c-OA-7Fk"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="IDv-lp-pyJ" secondAttribute="trailing" constant="20" id="OSV-QD-Pcj"/>
-                            <constraint firstItem="2WL-i9-tQP" firstAttribute="leading" secondItem="Afc-Sa-hpl" secondAttribute="trailing" constant="8" id="R3I-A7-Zbk"/>
-                            <constraint firstItem="gjc-Q5-psn" firstAttribute="leading" secondItem="2yW-Fh-Zlr" secondAttribute="trailing" constant="8" id="WC6-mC-Ugm"/>
-                            <constraint firstItem="n9a-ir-zTs" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="WeB-6r-jHq"/>
-                            <constraint firstAttribute="trailing" secondItem="Jdd-2g-dZg" secondAttribute="trailing" constant="-23" id="WnZ-Tr-ubd"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="2yW-Fh-Zlr" secondAttribute="bottom" constant="518" id="ZRr-eG-kko"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Afc-Sa-hpl" secondAttribute="bottom" constant="239" id="aF8-i3-bID"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="2WL-i9-tQP" secondAttribute="trailing" constant="20" id="aGp-oe-E4y"/>
-                            <constraint firstItem="Uu4-Xf-z1P" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="b13-2q-GSd"/>
-                            <constraint firstItem="Cva-SI-4tL" firstAttribute="top" secondItem="fM5-19-s71" secondAttribute="bottom" constant="19" id="cNe-Tq-C1n"/>
-                            <constraint firstItem="IDv-lp-pyJ" firstAttribute="top" secondItem="Cva-SI-4tL" secondAttribute="bottom" constant="21" id="hVu-jc-1vy"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="Cva-SI-4tL" secondAttribute="trailing" constant="224" id="jD6-bG-vjh"/>
+                            <constraint firstItem="KEa-o4-22H" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="3Wj-xw-yXw"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="IDv-lp-pyJ" secondAttribute="bottom" constant="20" id="56g-kD-jAz"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="2WL-i9-tQP" secondAttribute="trailing" constant="10" id="9Mq-gm-Udz"/>
+                            <constraint firstItem="yho-Jc-4B4" firstAttribute="top" secondItem="hSy-AI-N8B" secondAttribute="bottom" constant="20" id="BRW-kX-eE7"/>
+                            <constraint firstItem="Siv-hX-uIQ" firstAttribute="centerY" secondItem="SCy-Bg-oE8" secondAttribute="centerY" id="DNc-Wa-jU3"/>
+                            <constraint firstItem="IDv-lp-pyJ" firstAttribute="top" secondItem="fK6-L7-0wZ" secondAttribute="bottom" constant="10" id="DhI-hW-Ms7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gjc-Q5-psn" secondAttribute="trailing" constant="20" id="FA2-4K-blK"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="KEa-o4-22H" secondAttribute="bottom" constant="20" id="Hhs-10-eIk"/>
+                            <constraint firstItem="Cva-SI-4tL" firstAttribute="top" secondItem="n9a-ir-zTs" secondAttribute="bottom" constant="10" id="IIq-6i-41Y"/>
+                            <constraint firstItem="2yW-Fh-Zlr" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="10" id="IPl-8c-V3i"/>
+                            <constraint firstItem="Afc-Sa-hpl" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="10" id="KcA-PS-mHA"/>
+                            <constraint firstItem="fK6-L7-0wZ" firstAttribute="top" secondItem="fM5-19-s71" secondAttribute="bottom" constant="10" id="LHF-t7-qID"/>
+                            <constraint firstItem="2WL-i9-tQP" firstAttribute="top" secondItem="Siv-hX-uIQ" secondAttribute="bottom" constant="10" id="Oee-rJ-T7f"/>
+                            <constraint firstItem="Jdd-2g-dZg" firstAttribute="centerX" secondItem="SCy-Bg-oE8" secondAttribute="centerX" id="Osf-xt-b4W"/>
+                            <constraint firstItem="KEa-o4-22H" firstAttribute="top" secondItem="Cva-SI-4tL" secondAttribute="bottom" constant="10" id="S8M-sg-l5f"/>
+                            <constraint firstItem="Cva-SI-4tL" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="UPZ-qu-MI3"/>
+                            <constraint firstItem="Uu4-Xf-z1P" firstAttribute="top" secondItem="2yW-Fh-Zlr" secondAttribute="bottom" constant="10" id="V31-PU-hch"/>
+                            <constraint firstItem="Uu4-Xf-z1P" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="10" id="WcR-ST-HQR"/>
+                            <constraint firstItem="n9a-ir-zTs" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="Yyr-Bx-Tim"/>
+                            <constraint firstItem="yho-Jc-4B4" firstAttribute="leading" secondItem="SCy-Bg-oE8" secondAttribute="leadingMargin" constant="10" id="bfO-7I-ZZq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Siv-hX-uIQ" secondAttribute="trailing" constant="10" id="cQo-S5-sKA"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="Jdd-2g-dZg" secondAttribute="bottom" constant="5" id="d4J-k0-ix3"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="fM5-19-s71" secondAttribute="trailing" constant="20" id="d4w-Vu-EZc"/>
+                            <constraint firstItem="Uu4-Xf-z1P" firstAttribute="centerY" secondItem="SCy-Bg-oE8" secondAttribute="centerY" id="ghg-2h-h5i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yho-Jc-4B4" secondAttribute="trailing" constant="10" id="hSP-ff-LH5"/>
                             <constraint firstItem="hSy-AI-N8B" firstAttribute="top" secondItem="8uO-5l-VdC" secondAttribute="top" constant="20" id="jfn-CY-RdU"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="yho-Jc-4B4" secondAttribute="trailing" constant="20" id="kI7-dn-pCh"/>
-                            <constraint firstItem="Jdd-2g-dZg" firstAttribute="leading" secondItem="SCy-Bg-oE8" secondAttribute="leading" constant="-24" id="lmH-EH-b90"/>
-                            <constraint firstItem="fK6-L7-0wZ" firstAttribute="top" secondItem="n9a-ir-zTs" secondAttribute="bottom" constant="19" id="lzo-gA-xIC"/>
-                            <constraint firstItem="2yW-Fh-Zlr" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="mKI-5n-Qly"/>
-                            <constraint firstItem="Siv-hX-uIQ" firstAttribute="leading" secondItem="2yW-Fh-Zlr" secondAttribute="trailing" constant="8" id="nle-G2-9k1"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Siv-hX-uIQ" secondAttribute="bottom" constant="376" id="p95-fA-FzQ"/>
-                            <constraint firstItem="2WL-i9-tQP" firstAttribute="leading" secondItem="Uu4-Xf-z1P" secondAttribute="trailing" constant="8" id="qIC-Kw-kkz"/>
-                            <constraint firstItem="2WL-i9-tQP" firstAttribute="leading" secondItem="Uu4-Xf-z1P" secondAttribute="trailing" constant="8" id="qzj-OL-3Sg"/>
-                            <constraint firstItem="Jdd-2g-dZg" firstAttribute="top" secondItem="hSy-AI-N8B" secondAttribute="bottom" constant="345.5" id="spK-GJ-mex"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="gjc-Q5-psn" secondAttribute="trailing" constant="20" id="tMQ-0Z-TDh"/>
-                            <constraint firstItem="Afc-Sa-hpl" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="xja-Qv-i7z"/>
-                            <constraint firstItem="yho-Jc-4B4" firstAttribute="top" secondItem="hSy-AI-N8B" secondAttribute="bottom" constant="20" id="y6N-IT-eLc"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="gjc-Q5-psn" secondAttribute="bottom" constant="518" id="yEZ-dp-NNS"/>
-                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="Siv-hX-uIQ" secondAttribute="trailing" constant="20" id="yg5-qJ-09L"/>
+                            <constraint firstItem="fK6-L7-0wZ" firstAttribute="trailing" secondItem="8uO-5l-VdC" secondAttribute="trailing" constant="-20" id="ld8-dj-7iZ"/>
+                            <constraint firstItem="Siv-hX-uIQ" firstAttribute="top" secondItem="gjc-Q5-psn" secondAttribute="bottom" constant="10" id="tF0-bl-wAC"/>
+                            <constraint firstItem="8uO-5l-VdC" firstAttribute="trailing" secondItem="IDv-lp-pyJ" secondAttribute="trailing" constant="20" id="uL1-OF-hqZ"/>
+                            <constraint firstItem="hSy-AI-N8B" firstAttribute="centerX" secondItem="SCy-Bg-oE8" secondAttribute="centerX" id="udK-El-fVm"/>
+                            <constraint firstItem="Afc-Sa-hpl" firstAttribute="top" secondItem="Uu4-Xf-z1P" secondAttribute="bottom" constant="10" id="vHF-X1-AtS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8uO-5l-VdC"/>
                     </view>
@@ -765,24 +698,24 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0km-Lz-lDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="90"/>
+            <point key="canvasLocation" x="904.79999999999995" y="89.408866995073893"/>
         </scene>
         <!--Page4 View Controller-->
         <scene sceneID="uFY-PQ-vnT">
             <objects>
                 <viewController storyboardIdentifier="Page4ViewController" id="qQQ-1Z-lxd" customClass="Page4ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XON-6k-gA7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgQ-4J-mnf">
-                                <rect key="frame" x="166.5" y="20" width="42" height="21"/>
+                                <rect key="frame" x="166.66666666666666" y="64" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-o3-szD">
-                                <rect key="frame" x="20" y="61" width="335" height="473"/>
+                                <rect key="frame" x="20" y="105.00000000000003" width="335" height="472.66666666666674"/>
                                 <string key="text">Why is this practice important? 
 
 Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimiz- es self-organization. 
@@ -800,40 +733,40 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BendingSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-jW-MdP">
-                                <rect key="frame" x="20" y="372" width="136" height="175"/>
+                                <rect key="frame" x="20" y="416" width="136" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="5Rq-HF-hJD"/>
                                     <constraint firstAttribute="width" constant="175" id="X7a-pM-EWc"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RetractingSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="TD5-aq-nnc">
-                                <rect key="frame" x="180" y="372" width="175" height="175"/>
+                                <rect key="frame" x="180" y="416" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="EEs-VX-x5g"/>
                                     <constraint firstAttribute="width" constant="175" id="bJU-nU-a5F"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="Cce-Iy-KCU">
-                                <rect key="frame" x="100" y="452" width="175" height="175"/>
+                                <rect key="frame" x="100" y="563" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="Wac-ho-Jhr"/>
                                     <constraint firstAttribute="width" constant="175" id="Zd4-g0-jf9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bending the Spoke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY1-vg-rf1">
-                                <rect key="frame" x="25" y="552" width="110" height="14.5"/>
+                                <rect key="frame" x="25" y="596" width="110" height="14.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retracting the Spoke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwG-Ra-oLS">
-                                <rect key="frame" x="216" y="552" width="134" height="14.5"/>
+                                <rect key="frame" x="216" y="596" width="134" height="14.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spoke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIJ-HN-dMK">
-                                <rect key="frame" x="165" y="632" width="45" height="20.5"/>
+                                <rect key="frame" x="165" y="743" width="45" height="20.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

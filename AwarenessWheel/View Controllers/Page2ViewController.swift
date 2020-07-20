@@ -74,6 +74,15 @@ class Page2ViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        kindIntentions.layer.cornerRadius = 12
+        relationSense.layer.cornerRadius = 12
+        hubInHub.layer.cornerRadius = 12
+        mentalActivities.layer.cornerRadius = 12
+        firstFiveSenses.layer.cornerRadius = 12
+        innerSensations.layer.cornerRadius = 12
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -97,6 +106,10 @@ class Page2ViewController: UIViewController {
             firstFiveSenses.isHidden = true
             innerSensations.isHidden = true
             
+            kindIntentions.layer.cornerRadius = 12
+            relationSense.layer.cornerRadius = 12
+            hubInHub.layer.cornerRadius = 12
+            mentalActivities.layer.cornerRadius = 12
             
         } else
             if firstChoice == .plane {
@@ -104,17 +117,19 @@ class Page2ViewController: UIViewController {
             for plane in planePics {
                 plane?.isHidden = false
             }
-            
-        } else if firstChoice == .wheel {
-            
-            imageWheel.isHidden = false
-            
-            
             let buttons = [firstFiveSenses, innerSensations, mentalActivities, hubInHub, relationSense, kindIntentions]
             for button in buttons {
                 button?.isHidden = true
             }
             
+        } else if firstChoice == .wheel {
+            
+                imageWheel.isHidden = false
+            
+            let buttons = [firstFiveSenses, innerSensations, mentalActivities, hubInHub, relationSense, kindIntentions]
+            for button in buttons {
+                button?.isHidden = true
+            }
         }
     }
 }
