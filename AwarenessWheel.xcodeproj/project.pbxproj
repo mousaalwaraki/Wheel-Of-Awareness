@@ -22,25 +22,25 @@
 		4134B26124BF5194005514BB /* Rim 3 part 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25324BF5194005514BB /* Rim 3 part 2.mp3 */; };
 		4134B26224BF5194005514BB /* Final Section.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B25424BF5194005514BB /* Final Section.mp3 */; };
 		4134B26424BF5EE7005514BB /* Silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4134B26324BF5EE7005514BB /* Silence.mp3 */; };
-		415C5CB12448871700D3B952 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C5CB02448871700D3B952 /* Page3ViewController.swift */; };
-		4167E6BF246049040093A556 /* loopChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167E6BE246049040093A556 /* loopChoices.swift */; };
-		41A8609E243F20F7004F1FC5 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8609D243F20F7004F1FC5 /* Page4ViewController.swift */; };
-		41A860A0243F217F004F1FC5 /* explainedChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8609F243F217F004F1FC5 /* explainedChoices.swift */; };
-		41B1C8E72440872000AC1FB3 /* Page4TextChunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1C8E62440872000AC1FB3 /* Page4TextChunks.swift */; };
-		41B1C8E924408B3E00AC1FB3 /* Page2TextChunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1C8E824408B3E00AC1FB3 /* Page2TextChunks.swift */; };
+		415C5CB12448871700D3B952 /* CustomWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C5CB02448871700D3B952 /* CustomWheelViewController.swift */; };
+		4167E6BF246049040093A556 /* LoopChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167E6BE246049040093A556 /* LoopChoices.swift */; };
+		41A8609E243F20F7004F1FC5 /* RimExplanationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8609D243F20F7004F1FC5 /* RimExplanationsViewController.swift */; };
+		41A860A0243F217F004F1FC5 /* ExplainedChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8609F243F217F004F1FC5 /* ExplainedChoices.swift */; };
+		41B1C8E72440872000AC1FB3 /* RimExplanationsTextChunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1C8E62440872000AC1FB3 /* RimExplanationsTextChunks.swift */; };
+		41B1C8E924408B3E00AC1FB3 /* WheelsDetailsTextChunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1C8E824408B3E00AC1FB3 /* WheelsDetailsTextChunks.swift */; };
 		41FB30F2243E62100009AC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB30F1243E62100009AC51 /* AppDelegate.swift */; };
 		41FB30F4243E62100009AC51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB30F3243E62100009AC51 /* SceneDelegate.swift */; };
-		41FB30F6243E62100009AC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB30F5243E62100009AC51 /* ViewController.swift */; };
+		41FB30F6243E62100009AC51 /* FullWheelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB30F5243E62100009AC51 /* FullWheelsViewController.swift */; };
 		41FB30F9243E62100009AC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FB30F7243E62100009AC51 /* Main.storyboard */; };
 		41FB30FB243E62110009AC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FB30FA243E62110009AC51 /* Assets.xcassets */; };
 		41FB30FE243E62110009AC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FB30FC243E62110009AC51 /* LaunchScreen.storyboard */; };
-		41FB3110243E63D00009AC51 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB310F243E63D00009AC51 /* Page2ViewController.swift */; };
+		41FB3110243E63D00009AC51 /* WheelsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB310F243E63D00009AC51 /* WheelsDetailsViewController.swift */; };
 		41FB3113243E6F530009AC51 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB3112243E6F530009AC51 /* AVFoundation.framework */; };
 		41FB311B243E71610009AC51 /* Basic Wheel of Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FB3117243E71600009AC51 /* Basic Wheel of Awareness.mp3 */; };
 		41FB311C243E71610009AC51 /* Full Wheel of Awareness and Plane of Possibilities.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FB3118243E71610009AC51 /* Full Wheel of Awareness and Plane of Possibilities.mp3 */; };
 		41FB311D243E71610009AC51 /* Full Wheel of Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FB3119243E71610009AC51 /* Full Wheel of Awareness.mp3 */; };
 		41FB311E243E71610009AC51 /* Consolidated Wheel of Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41FB311A243E71610009AC51 /* Consolidated Wheel of Awareness.mp3 */; };
-		41FB3120243E758D0009AC51 /* wheelChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB311F243E758D0009AC51 /* wheelChoice.swift */; };
+		41FB3120243E758D0009AC51 /* WheelChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB311F243E758D0009AC51 /* WheelChoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,27 +59,27 @@
 		4134B25324BF5194005514BB /* Rim 3 part 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rim 3 part 2.mp3"; sourceTree = "<group>"; };
 		4134B25424BF5194005514BB /* Final Section.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Section.mp3"; sourceTree = "<group>"; };
 		4134B26324BF5EE7005514BB /* Silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Silence.mp3; sourceTree = "<group>"; };
-		415C5CB02448871700D3B952 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
-		4167E6BE246049040093A556 /* loopChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopChoices.swift; sourceTree = "<group>"; };
-		41A8609D243F20F7004F1FC5 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
-		41A8609F243F217F004F1FC5 /* explainedChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = explainedChoices.swift; sourceTree = "<group>"; };
-		41B1C8E62440872000AC1FB3 /* Page4TextChunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4TextChunks.swift; sourceTree = "<group>"; };
-		41B1C8E824408B3E00AC1FB3 /* Page2TextChunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2TextChunks.swift; sourceTree = "<group>"; };
+		415C5CB02448871700D3B952 /* CustomWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWheelViewController.swift; sourceTree = "<group>"; };
+		4167E6BE246049040093A556 /* LoopChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopChoices.swift; sourceTree = "<group>"; };
+		41A8609D243F20F7004F1FC5 /* RimExplanationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimExplanationsViewController.swift; sourceTree = "<group>"; };
+		41A8609F243F217F004F1FC5 /* ExplainedChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainedChoices.swift; sourceTree = "<group>"; };
+		41B1C8E62440872000AC1FB3 /* RimExplanationsTextChunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimExplanationsTextChunks.swift; sourceTree = "<group>"; };
+		41B1C8E824408B3E00AC1FB3 /* WheelsDetailsTextChunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelsDetailsTextChunks.swift; sourceTree = "<group>"; };
 		41FB30EE243E62100009AC51 /* AwarenessWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwarenessWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB30F1243E62100009AC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FB30F3243E62100009AC51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41FB30F5243E62100009AC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41FB30F5243E62100009AC51 /* FullWheelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWheelsViewController.swift; sourceTree = "<group>"; };
 		41FB30F8243E62100009AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41FB30FA243E62110009AC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FB30FD243E62110009AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FB30FF243E62110009AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41FB310F243E63D00009AC51 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		41FB310F243E63D00009AC51 /* WheelsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelsDetailsViewController.swift; sourceTree = "<group>"; };
 		41FB3112243E6F530009AC51 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		41FB3117243E71600009AC51 /* Basic Wheel of Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Basic Wheel of Awareness.mp3"; sourceTree = "<group>"; };
 		41FB3118243E71610009AC51 /* Full Wheel of Awareness and Plane of Possibilities.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Wheel of Awareness and Plane of Possibilities.mp3"; sourceTree = "<group>"; };
 		41FB3119243E71610009AC51 /* Full Wheel of Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Wheel of Awareness.mp3"; sourceTree = "<group>"; };
 		41FB311A243E71610009AC51 /* Consolidated Wheel of Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Consolidated Wheel of Awareness.mp3"; sourceTree = "<group>"; };
-		41FB311F243E758D0009AC51 /* wheelChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheelChoice.swift; sourceTree = "<group>"; };
+		41FB311F243E758D0009AC51 /* WheelChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelChoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +119,11 @@
 		41E4B4202461107800FB9330 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				41B1C8E824408B3E00AC1FB3 /* Page2TextChunks.swift */,
-				41B1C8E62440872000AC1FB3 /* Page4TextChunks.swift */,
-				41FB311F243E758D0009AC51 /* wheelChoice.swift */,
-				41A8609F243F217F004F1FC5 /* explainedChoices.swift */,
-				4167E6BE246049040093A556 /* loopChoices.swift */,
+				41B1C8E824408B3E00AC1FB3 /* WheelsDetailsTextChunks.swift */,
+				41B1C8E62440872000AC1FB3 /* RimExplanationsTextChunks.swift */,
+				41FB311F243E758D0009AC51 /* WheelChoice.swift */,
+				41A8609F243F217F004F1FC5 /* ExplainedChoices.swift */,
+				4167E6BE246049040093A556 /* LoopChoices.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -131,10 +131,10 @@
 		41E4B421246110A000FB9330 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				41FB30F5243E62100009AC51 /* ViewController.swift */,
-				41FB310F243E63D00009AC51 /* Page2ViewController.swift */,
-				415C5CB02448871700D3B952 /* Page3ViewController.swift */,
-				41A8609D243F20F7004F1FC5 /* Page4ViewController.swift */,
+				41FB30F5243E62100009AC51 /* FullWheelsViewController.swift */,
+				41FB310F243E63D00009AC51 /* WheelsDetailsViewController.swift */,
+				415C5CB02448871700D3B952 /* CustomWheelViewController.swift */,
+				41A8609D243F20F7004F1FC5 /* RimExplanationsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -282,17 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41FB30F6243E62100009AC51 /* ViewController.swift in Sources */,
-				4167E6BF246049040093A556 /* loopChoices.swift in Sources */,
-				41A8609E243F20F7004F1FC5 /* Page4ViewController.swift in Sources */,
-				41FB3120243E758D0009AC51 /* wheelChoice.swift in Sources */,
-				415C5CB12448871700D3B952 /* Page3ViewController.swift in Sources */,
-				41FB3110243E63D00009AC51 /* Page2ViewController.swift in Sources */,
-				41B1C8E72440872000AC1FB3 /* Page4TextChunks.swift in Sources */,
-				41B1C8E924408B3E00AC1FB3 /* Page2TextChunks.swift in Sources */,
+				41FB30F6243E62100009AC51 /* FullWheelsViewController.swift in Sources */,
+				4167E6BF246049040093A556 /* LoopChoices.swift in Sources */,
+				41A8609E243F20F7004F1FC5 /* RimExplanationsViewController.swift in Sources */,
+				41FB3120243E758D0009AC51 /* WheelChoice.swift in Sources */,
+				415C5CB12448871700D3B952 /* CustomWheelViewController.swift in Sources */,
+				41FB3110243E63D00009AC51 /* WheelsDetailsViewController.swift in Sources */,
+				41B1C8E72440872000AC1FB3 /* RimExplanationsTextChunks.swift in Sources */,
+				41B1C8E924408B3E00AC1FB3 /* WheelsDetailsTextChunks.swift in Sources */,
 				41FB30F2243E62100009AC51 /* AppDelegate.swift in Sources */,
 				41FB30F4243E62100009AC51 /* SceneDelegate.swift in Sources */,
-				41A860A0243F217F004F1FC5 /* explainedChoices.swift in Sources */,
+				41A860A0243F217F004F1FC5 /* ExplainedChoices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Page3ViewController: UIViewController, AVAudioPlayerDelegate {
+class CustomWheelViewController: UIViewController, AVAudioPlayerDelegate {
     
     var playerPageThree:AVAudioPlayer?
     var checkTime:Bool?

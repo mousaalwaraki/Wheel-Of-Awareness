@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Page2ViewController: UIViewController {
+class WheelsDetailsViewController: UIViewController {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var paragraphText: UILabel!
@@ -67,7 +67,7 @@ class Page2ViewController: UIViewController {
     }
     
     func openNextScreen(with choice: explainedChoices) {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Page4ViewController") as? Page4ViewController else {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Page4ViewController") as? RimExplanationsViewController else {
             return
         }
         vc.choice = choice

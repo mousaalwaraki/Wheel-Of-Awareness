@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Full Wheels View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FullWheelsViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xw9-ec-hMt">
-                                <rect key="frame" x="244" y="310.66666666666669" width="130" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xw9-ec-hMt">
+                                <rect key="frame" x="244" y="310.5" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="OlW-Fq-Fmq"/>
                                     <constraint firstAttribute="width" constant="130" id="fpQ-FF-w9L"/>
@@ -26,8 +28,8 @@
                                     <action selector="basicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNu-VU-7Xs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-Ee-sWK">
-                                <rect key="frame" x="266" y="530.66666666666663" width="75" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-Ee-sWK">
+                                <rect key="frame" x="305" y="530.5" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Axd-aN-gXJ"/>
                                     <constraint firstAttribute="height" constant="75" id="adi-BL-PK1"/>
@@ -37,8 +39,8 @@
                                     <action selector="planeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJr-Jj-lqR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-oq-1xl">
-                                <rect key="frame" x="85" y="395.66666666666669" width="180" height="180.00000000000006"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-oq-1xl">
+                                <rect key="frame" x="85" y="395.5" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="efj-Rp-Owu"/>
                                     <constraint firstAttribute="width" constant="180" id="lbF-zd-i2h"/>
@@ -48,8 +50,8 @@
                                     <action selector="fullButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJ6-Wl-qzd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-2z-Kff">
-                                <rect key="frame" x="50" y="110.66666666666669" width="275" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-2z-Kff">
+                                <rect key="frame" x="50" y="110.5" width="314" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HvF-Dq-GzF"/>
@@ -61,8 +63,8 @@
                                     <segue destination="FbP-Lo-4W2" kind="show" id="1py-tq-vwH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-SK-WCJ">
-                                <rect key="frame" x="50" y="190.66666666666666" width="275" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-SK-WCJ">
+                                <rect key="frame" x="50" y="190.5" width="314" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HAp-C5-2yM"/>
@@ -74,8 +76,8 @@
                                     <action selector="buttonTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pY7-ma-oJu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7e-Y4-yWf">
-                                <rect key="frame" x="50" y="280.66666666666669" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7e-Y4-yWf">
+                                <rect key="frame" x="50" y="280.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="dXc-La-jzA"/>
                                     <constraint firstAttribute="height" constant="100" id="moL-Ua-g1V"/>
@@ -85,40 +87,40 @@
                                     <action selector="consolidatedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSN-K7-sSn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxJ-Wu-JXK">
-                                <rect key="frame" x="118" y="64" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxJ-Wu-JXK">
+                                <rect key="frame" x="137.5" y="64" width="139" height="30"/>
                                 <state key="normal" title="Wheel of Awareness">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
                                     <action selector="wheelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vJ-PQ-jUV"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-kG-aYZ">
-                                <rect key="frame" x="68" y="703.66666666666663" width="239" height="31"/>
+                                <rect key="frame" x="68" y="787.5" width="278" height="31"/>
                                 <connections>
                                     <action selector="changeSliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="lEz-ov-jNM"/>
                                 </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-fW-2gd">
-                                <rect key="frame" x="51" y="741.33333333333337" width="272.33333333333331" height="22.333333333333371"/>
+                                <rect key="frame" x="70" y="825" width="273.5" height="22.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkM-f0-1fg">
-                                        <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="22.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="22.5"/>
                                         <state key="normal" image="gobackward.15" catalog="system"/>
                                         <connections>
                                             <action selector="goBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcE-gC-jaa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R9-oL-q20">
-                                        <rect key="frame" x="128.66666666666666" y="0.0" width="15" height="22.333333333333332"/>
+                                        <rect key="frame" x="129" y="0.0" width="15.5" height="22.5"/>
                                         <state key="normal" image="play" catalog="system"/>
                                         <connections>
                                             <action selector="playPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Qh-u0-qi0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lv-6R-my7">
-                                        <rect key="frame" x="252.66666666666666" y="0.0" width="19.666666666666657" height="22.333333333333332"/>
+                                        <rect key="frame" x="253.5" y="0.0" width="20" height="22.5"/>
                                         <state key="normal" image="goforward.15" catalog="system"/>
                                         <connections>
                                             <action selector="goForwardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Blr-W1-W9Q"/>
@@ -128,7 +130,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ncq-kG-aYZ" secondAttribute="trailing" constant="70" id="1mN-eK-Ppf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E2B-fW-2gd" secondAttribute="bottom" constant="14.5" id="238-oK-nBq"/>
@@ -153,7 +156,6 @@
                             <constraint firstItem="PSY-2z-Kff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fvX-Sw-ICK"/>
                             <constraint firstItem="xw9-ec-hMt" firstAttribute="top" secondItem="aXR-SK-WCJ" secondAttribute="bottom" constant="60" id="nDH-Fh-o7p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="basicButton" destination="xw9-ec-hMt" id="TBf-cP-73e"/>
@@ -175,18 +177,18 @@
             <objects>
                 <viewController storyboardIdentifier="wheelDetailsViewController" id="aw0-GH-55R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5QW-kj-zyg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is it Important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vc-bX-fFJ">
-                                <rect key="frame" x="111" y="63.999999999999993" width="153" height="20.666666666666664"/>
+                                <rect key="frame" x="131" y="64" width="152" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="afv-T8-c0f">
-                                <rect key="frame" x="20" y="104.66666666666669" width="335" height="707.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="20" y="104.5" width="374" height="791.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Why is this practice important? 
 
 Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimizes self-organization. 
@@ -203,12 +205,13 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
 	•	Our sense of relational connections with other people and with the planet 
 
 The power of doing the Wheel of Awareness practice is to integrate consciousness by differentiating hub from rim, and systematically linking these various elements intentionally with the movement of a spoke of attention. This integration of consciousness allows us to free the mind to learn to move recurrent thoughts and moods of the rim toward an open space of knowing, the hub. Practicing the Wheel of Awareness can liberate the mind from ingrained patterns of cognition and emotion and help you emerge with a more expansive sense of awareness.  </string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="guY-Km-RyN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="afv-T8-c0f" secondAttribute="bottom" id="3Fu-Kk-UB2"/>
                             <constraint firstItem="afv-T8-c0f" firstAttribute="top" secondItem="5vc-bX-fFJ" secondAttribute="bottom" constant="20" id="9vJ-8M-oPW"/>
@@ -217,7 +220,6 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                             <constraint firstItem="5vc-bX-fFJ" firstAttribute="centerX" secondItem="5QW-kj-zyg" secondAttribute="centerX" id="jq4-Hs-g9L"/>
                             <constraint firstItem="afv-T8-c0f" firstAttribute="leading" secondItem="guY-Km-RyN" secondAttribute="leading" constant="20" id="xug-wL-yAi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="guY-Km-RyN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zeo-RE-eue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -227,22 +229,22 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
         <!--customViewController-->
         <scene sceneID="MEO-w8-UR0">
             <objects>
-                <viewController storyboardIdentifier="customViewController" title="customViewController" id="JtK-FS-oI6" customClass="Page3ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customViewController" title="customViewController" id="JtK-FS-oI6" customClass="CustomWheelViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FIC-EI-Sna">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is it Important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrC-83-Tms">
-                                <rect key="frame" x="111.33333333333333" y="64" width="152.66666666666669" height="20.333333333333329"/>
+                                <rect key="frame" x="131" y="64" width="152" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-Cy-rTB" userLabel="Player Stack">
-                                <rect key="frame" x="42" y="746" width="292.66666666666669" height="22"/>
+                                <rect key="frame" x="42" y="830" width="331.5" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s0-aA-GZw">
-                                        <rect key="frame" x="0.0" y="0.0" width="292.66666666666669" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331.5" height="22"/>
                                         <state key="normal" image="play" catalog="system"/>
                                         <connections>
                                             <action selector="playButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="8Nv-hc-3E8"/>
@@ -251,111 +253,111 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="192" translatesAutoresizingMaskIntoConstraints="NO" id="UhN-8W-n2w" userLabel="Wheel Stack">
-                                <rect key="frame" x="20" y="134.33333333333334" width="335" height="31"/>
+                                <rect key="frame" x="20" y="134.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o9-vN-9wd">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIv-od-VJ2">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="hDP-Xs-1wf" userLabel="Rim 1">
-                                <rect key="frame" x="20" y="185.33333333333334" width="335" height="31"/>
+                                <rect key="frame" x="20" y="185.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Rim 1 Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-Tl-F8v">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IcA-kJ-WOT">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-oM-j9m" userLabel="Rim 2">
-                                <rect key="frame" x="20" y="236.33333333333334" width="335" height="31.000000000000028"/>
+                                <rect key="frame" x="20" y="236.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Rim 2 Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-RB-93i">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-em-w9z">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-MY-BaP">
-                                <rect key="frame" x="20" y="470.33333333333331" width="77" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-MY-BaP">
+                                <rect key="frame" x="20" y="470.5" width="77" height="30"/>
                                 <state key="normal" title="Hub in Hub"/>
                                 <connections>
                                     <action selector="hubInHubButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="p0j-ZK-wfn"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qzL-ep-QTp" userLabel="Simple MA">
-                                <rect key="frame" x="20" y="327.33333333333331" width="335" height="31"/>
+                                <rect key="frame" x="20" y="327.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple MA Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-vD-MzZ" userLabel="Simple MA label">
-                                        <rect key="frame" x="0.0" y="0.0" width="186" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKu-xU-03e">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-ao-KQk" userLabel="Advanced MA">
-                                <rect key="frame" x="20" y="378.33333333333331" width="335" height="31"/>
+                                <rect key="frame" x="20" y="378.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Advanced MA Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNk-5R-EJ5">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98d-cC-y21">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-4c-rzm">
-                                <rect key="frame" x="20" y="277.33333333333331" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-4c-rzm">
+                                <rect key="frame" x="20" y="277.5" width="64" height="30"/>
                                 <state key="normal" title="Full Body"/>
                                 <connections>
                                     <action selector="fullBodyButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="HQa-lE-eAi"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-m1-e8k" userLabel="Hub Stack">
-                                <rect key="frame" x="20" y="429.33333333333331" width="335" height="31"/>
+                                <rect key="frame" x="20" y="429.5" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hub In Hub Intro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkG-y0-xcv">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-5l-jfx">
-                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILs-pl-GZT">
-                                <rect key="frame" x="250.33333333333334" y="600.33333333333337" width="37.666666666666657" height="20.333333333333371"/>
+                                <rect key="frame" x="289.5" y="600.5" width="37.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70o-PQ-3a1">
-                                <rect key="frame" x="138.33333333333334" y="600.33333333333337" width="42" height="20.333333333333371"/>
+                                <rect key="frame" x="177.5" y="600.5" width="42" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="jsJ-Mt-Pu0"/>
                                 </constraints>
@@ -364,7 +366,7 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-Vg-bHo">
-                                <rect key="frame" x="162.66666666666666" y="587" width="50" height="34"/>
+                                <rect key="frame" x="182" y="587" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="T2d-1f-q8e"/>
                                 </constraints>
@@ -376,13 +378,13 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3w-7Q-3eG">
-                                <rect key="frame" x="217.66666666666666" y="595.33333333333337" width="46.666666666666657" height="20.333333333333371"/>
+                                <rect key="frame" x="237" y="595.5" width="46.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-qT-4S9">
-                                <rect key="frame" x="78.333333333333329" y="587" width="49.999999999999986" height="34"/>
+                                <rect key="frame" x="117.5" y="587" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="lFD-ls-lzi"/>
                                 </constraints>
@@ -394,7 +396,7 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </connections>
                             </textField>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfy-VA-lhe">
-                                <rect key="frame" x="190.33333333333334" y="587" width="50" height="34"/>
+                                <rect key="frame" x="229.5" y="587" width="50" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="wyB-kg-AoW"/>
                                 </constraints>
@@ -405,8 +407,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="secsTextFieldStartedEditing:" destination="JtK-FS-oI6" eventType="editingDidBegin" id="m4B-xL-Dex"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-27-Hgt">
-                                <rect key="frame" x="20" y="510.33333333333326" width="161" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-27-Hgt">
+                                <rect key="frame" x="20" y="510.5" width="161" height="30"/>
                                 <state key="normal" title="Statements of Intention"/>
                                 <connections>
                                     <action selector="hubInHubButton:" destination="JtK-FS-oI6" eventType="touchUpInside" id="daJ-00-Kho"/>
@@ -414,7 +416,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bAG-GH-8lC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eUO-Vg-bHo" firstAttribute="top" secondItem="8N4-27-Hgt" secondAttribute="bottom" constant="46.5" id="3Cg-J0-sDL"/>
                             <constraint firstItem="Bfy-VA-lhe" firstAttribute="leading" secondItem="70o-PQ-3a1" secondAttribute="trailing" constant="10" id="5w2-2P-bl4"/>
@@ -460,7 +463,6 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                             <constraint firstItem="Mfs-4c-rzm" firstAttribute="top" secondItem="v1q-oM-j9m" secondAttribute="bottom" constant="10" id="y9A-dG-hDA"/>
                             <constraint firstItem="bAG-GH-8lC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fhd-MY-BaP" secondAttribute="trailing" symbolic="YES" id="yzF-aP-BwA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bAG-GH-8lC"/>
                     </view>
                     <navigationItem key="navigationItem" id="cMi-Cp-ahq"/>
                     <connections>
@@ -486,29 +488,29 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="766.99507389162568"/>
         </scene>
-        <!--Page2 View Controller-->
+        <!--Wheels Details View Controller-->
         <scene sceneID="Ncp-8b-Yvj">
             <objects>
-                <viewController id="FbP-Lo-4W2" customClass="Page2ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FbP-Lo-4W2" customClass="WheelsDetailsViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCy-Bg-oE8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-AI-N8B">
-                                <rect key="frame" x="166.66666666666666" y="20" width="42" height="20.666666666666671"/>
+                                <rect key="frame" x="186" y="20" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yho-Jc-4B4">
-                                <rect key="frame" x="26" y="60.666666666666671" width="323" height="200.66666666666663"/>
+                                <rect key="frame" x="30" y="60.5" width="354" height="186.5"/>
                                 <string key="text">We are happy to share our Wheel of Awareness with you and hope that you will find it useful. \n \nThe regular practice of the Wheel of Awareness strengthens your mind by integrating your consciousness and empowering you to live a full and vital life. \n \nMindsight is defined as a skill of the mind that promotes insight, empathy and integration. \n\nThis is a mindsight-building practice. \n\nThe Wheel of Awareness is the basis for a reflective practice which helps us direct our attention and improve our ability to focus on the individual aspects of our internal and external worlds, which are key components of a healthy mind. \n\nIf you have any questions, please contact us at info@drdansiegel.com. \n\nWe appreciate having you in our Mindsight community!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-ir-zTs">
-                                <rect key="frame" x="20" y="504" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-ir-zTs">
+                                <rect key="frame" x="20" y="588" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Roj-Ez-yaa"/>
@@ -521,8 +523,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="firstFiveSensesButton:" destination="FbP-Lo-4W2" eventType="touchUpInside" id="Mxj-mc-dX3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM5-19-s71">
-                                <rect key="frame" x="195" y="504" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM5-19-s71">
+                                <rect key="frame" x="234" y="588" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="Dow-YZ-IY2"/>
@@ -535,8 +537,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="innerSensationsButton:" destination="FbP-Lo-4W2" eventType="touchUpInside" id="Znw-C7-Nor"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cva-SI-4tL">
-                                <rect key="frame" x="20" y="574" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cva-SI-4tL">
+                                <rect key="frame" x="20" y="658" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="mTM-Fx-i8L"/>
@@ -549,8 +551,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="mentalActivitiesButton:" destination="FbP-Lo-4W2" eventType="touchUpInside" id="5Qb-FD-vr7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDv-lp-pyJ">
-                                <rect key="frame" x="195" y="644" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDv-lp-pyJ">
+                                <rect key="frame" x="234" y="728" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="DTS-wL-fRx"/>
@@ -563,8 +565,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="kindIntentionsButton:" destination="FbP-Lo-4W2" eventType="touchUpInside" id="Fpf-bt-4kt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK6-L7-0wZ">
-                                <rect key="frame" x="195" y="574" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK6-L7-0wZ">
+                                <rect key="frame" x="234" y="658" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="2U3-p2-qGu"/>
@@ -577,8 +579,8 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                     <action selector="hubInHubButton:" destination="FbP-Lo-4W2" eventType="touchUpInside" id="W8k-oz-v52"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEa-o4-22H">
-                                <rect key="frame" x="20" y="644" width="160" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEa-o4-22H">
+                                <rect key="frame" x="20" y="728" width="160" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ahg-k5-ypz"/>
@@ -592,56 +594,57 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlanePic" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-Fh-Zlr">
-                                <rect key="frame" x="10" y="129" width="160" height="160"/>
+                                <rect key="frame" x="10" y="171" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="g7w-Ac-fEx"/>
                                     <constraint firstAttribute="height" constant="160" id="lM4-u4-VOM"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.49.52 PM" translatesAutoresizingMaskIntoConstraints="NO" id="gjc-Q5-psn">
-                                <rect key="frame" x="179" y="129" width="160" height="160"/>
+                                <rect key="frame" x="214" y="171" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="N1m-SI-jBK"/>
                                     <constraint firstAttribute="height" constant="160" id="T6q-x5-P5g"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.50.02 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-Xf-z1P">
-                                <rect key="frame" x="10" y="299" width="160" height="160"/>
+                                <rect key="frame" x="10" y="341" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="SZS-DZ-YMf"/>
                                     <constraint firstAttribute="width" constant="160" id="qiY-Rw-BDc"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 2.50.21 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-hX-uIQ">
-                                <rect key="frame" x="189" y="299" width="160" height="160"/>
+                                <rect key="frame" x="224" y="341" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="Y4Y-H5-h1t"/>
                                     <constraint firstAttribute="height" constant="160" id="zVh-Qz-us5"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaneTwoPic" translatesAutoresizingMaskIntoConstraints="NO" id="2WL-i9-tQP">
-                                <rect key="frame" x="205" y="469" width="160" height="160"/>
+                                <rect key="frame" x="244" y="511" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="4Wa-4l-sdy"/>
                                     <constraint firstAttribute="height" constant="160" id="Y9r-Lb-PXr"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaneThreePic" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-Sa-hpl">
-                                <rect key="frame" x="10" y="469" width="160" height="160"/>
+                                <rect key="frame" x="10" y="511" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="Wi7-Dy-SEG"/>
                                     <constraint firstAttribute="width" constant="160" id="t1C-0J-SQd"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-04-08 at 3.17.58 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-2g-dZg">
-                                <rect key="frame" x="0.0" y="499" width="375" height="220"/>
+                                <rect key="frame" x="19.5" y="583" width="375" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Fw3-x4-qh1"/>
                                     <constraint firstAttribute="height" constant="220" id="cp9-Zl-JCn"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8uO-5l-VdC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KEa-o4-22H" firstAttribute="leading" secondItem="8uO-5l-VdC" secondAttribute="leading" constant="20" id="3Wj-xw-yXw"/>
                             <constraint firstItem="8uO-5l-VdC" firstAttribute="bottom" secondItem="IDv-lp-pyJ" secondAttribute="bottom" constant="20" id="56g-kD-jAz"/>
@@ -675,7 +678,6 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
                             <constraint firstItem="hSy-AI-N8B" firstAttribute="centerX" secondItem="SCy-Bg-oE8" secondAttribute="centerX" id="udK-El-fVm"/>
                             <constraint firstItem="Afc-Sa-hpl" firstAttribute="top" secondItem="Uu4-Xf-z1P" secondAttribute="bottom" constant="10" id="vHF-X1-AtS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8uO-5l-VdC"/>
                     </view>
                     <navigationItem key="navigationItem" id="oXg-hZ-utO"/>
                     <connections>
@@ -700,22 +702,22 @@ The power of doing the Wheel of Awareness practice is to integrate consciousness
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="89.408866995073893"/>
         </scene>
-        <!--Page4 View Controller-->
+        <!--Rim Explanations View Controller-->
         <scene sceneID="uFY-PQ-vnT">
             <objects>
-                <viewController storyboardIdentifier="Page4ViewController" id="qQQ-1Z-lxd" customClass="Page4ViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page4ViewController" id="qQQ-1Z-lxd" customClass="RimExplanationsViewController" customModule="AwarenessWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XON-6k-gA7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgQ-4J-mnf">
-                                <rect key="frame" x="166.66666666666666" y="64" width="42" height="21"/>
+                                <rect key="frame" x="186" y="64" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-o3-szD">
-                                <rect key="frame" x="20" y="105.00000000000003" width="335" height="472.66666666666674"/>
+                                <rect key="frame" x="20" y="105" width="374" height="444"/>
                                 <string key="text">Why is this practice important? 
 
 Here at the Mindsight Institute, we work in an interdisciplinary field that combines all sciences into one framework called Interpersonal Neurobiology. We describe the mind as an emergent, self-organizing, embodied and relational process that regulates the flow of energy and information. This definition reveals how this aspect of mind is both within and between us, and helps us clarify how a healthy mind is one that moves these inner and relational movements of energy and information flow toward integration; integration optimiz- es self-organization. 
@@ -733,46 +735,47 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BendingSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-jW-MdP">
-                                <rect key="frame" x="20" y="416" width="136" height="175"/>
+                                <rect key="frame" x="20" y="416" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="5Rq-HF-hJD"/>
                                     <constraint firstAttribute="width" constant="175" id="X7a-pM-EWc"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RetractingSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="TD5-aq-nnc">
-                                <rect key="frame" x="180" y="416" width="175" height="175"/>
+                                <rect key="frame" x="219" y="416" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="EEs-VX-x5g"/>
                                     <constraint firstAttribute="width" constant="175" id="bJU-nU-a5F"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoSpoke" translatesAutoresizingMaskIntoConstraints="NO" id="Cce-Iy-KCU">
-                                <rect key="frame" x="100" y="563" width="175" height="175"/>
+                                <rect key="frame" x="119.5" y="647" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="Wac-ho-Jhr"/>
                                     <constraint firstAttribute="width" constant="175" id="Zd4-g0-jf9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bending the Spoke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY1-vg-rf1">
-                                <rect key="frame" x="25" y="596" width="110" height="14.333333333333371"/>
+                                <rect key="frame" x="25" y="596" width="149" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retracting the Spoke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwG-Ra-oLS">
-                                <rect key="frame" x="216" y="596" width="134" height="14.666666666666629"/>
+                                <rect key="frame" x="220" y="596" width="169" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spoke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIJ-HN-dMK">
-                                <rect key="frame" x="165" y="743" width="45" height="20.666666666666629"/>
+                                <rect key="frame" x="165" y="827" width="84" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="U9g-oA-cdi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GgQ-4J-mnf" firstAttribute="centerX" secondItem="XON-6k-gA7" secondAttribute="centerX" id="1hd-7r-m0l"/>
                             <constraint firstItem="TD5-aq-nnc" firstAttribute="top" secondItem="XON-6k-gA7" secondAttribute="topMargin" constant="372" id="3Yd-l4-PMG"/>
@@ -799,7 +802,6 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
                             <constraint firstAttribute="bottomMargin" secondItem="IwG-Ra-oLS" secondAttribute="bottom" constant="242" id="tJS-il-pvT"/>
                             <constraint firstItem="QOc-jW-MdP" firstAttribute="leading" secondItem="U9g-oA-cdi" secondAttribute="leading" constant="20" id="xYW-TP-uON"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="U9g-oA-cdi"/>
                     </view>
                     <navigationItem key="navigationItem" id="CWn-oA-9dd"/>
                     <connections>
@@ -832,5 +834,17 @@ One way to promote integration is with the Wheel of Awareness. In this practice,
         <image name="gobackward.15" catalog="system" width="121" height="128"/>
         <image name="goforward.15" catalog="system" width="121" height="128"/>
         <image name="play" catalog="system" width="120" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

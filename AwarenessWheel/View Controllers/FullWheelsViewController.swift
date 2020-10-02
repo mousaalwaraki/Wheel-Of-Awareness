@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FullWheelsViewController.swift
 //  AwarenessWheel
 //
 //  Created by Mousa Alwaraki on 4/8/20.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate{
+class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
     
     var player:AVAudioPlayer?
     var fileName = ""

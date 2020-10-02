@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Page4ViewController: UIViewController {
+class RimExplanationsViewController: UIViewController {
     
     @IBOutlet var p4TitleLabel: UILabel!
     @IBOutlet var p4ParagraphLabel: UILabel!
