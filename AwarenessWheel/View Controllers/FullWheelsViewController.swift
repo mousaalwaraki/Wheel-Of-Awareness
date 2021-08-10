@@ -8,11 +8,14 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
     
-    var player:AVAudioPlayer?
+//    var player:AVAudioPlayer?
     var fileName = ""
+    var duration = 0.0
+    var newPlayer: AVAudioPlayer?
     
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
@@ -44,7 +47,7 @@ class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
     }
     
     @IBAction func changeSliderBar(_ sender: Any) {
-        guard let player = player else {
+        guard let player = newPlayer else {
             return
         }
         player.currentTime = TimeInterval(sliderBar.value) * player.duration
@@ -66,42 +69,42 @@ class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
     
     @IBAction func wheelButton(_ sender: Any) {
         tapFunctions( .wheel, "What is the Wheel of Awareness", "Why is this practice important?")
-        player = nil
+        newPlayer = nil
         buttonTwo.isHidden = false
     }
     
     @IBAction func consolidatedButton(_ sender: Any) {
         tapFunctions( .consolidated, "Consolidated Wheel Details", "")
-        player = nil
+        newPlayer = nil
         buttonTwo.isHidden = true
     }
     
     @IBAction func fullButton(_ sender: Any) {
         tapFunctions( .full, "Full Wheel Details", "Custom Full Wheel")
-        player = nil
+        newPlayer = nil
         buttonTwo.isHidden = false
     }
     
     @IBAction func basicButton(_ sender: Any) {
         tapFunctions( .basic, "Basic Wheel Details", "")
-        player = nil
+        newPlayer = nil
         buttonTwo.isHidden = true
     }
     
     @IBAction func planeButton(_ sender: Any) {
         tapFunctions( .plane, "Plane Wheel Details", "")
-        player = nil
+        newPlayer = nil
         buttonTwo.isHidden = true
     }
     
     // Audio Player
     @IBAction func goBackButton(_ sender: Any) {
-        player?.currentTime -= 15
+        newPlayer?.currentTime -= 15
     }
     
     @IBAction func playPauseButton(_ sender: Any) {
         
-        guard let player = player else {
+        if newPlayer == nil {
             pausePlayButton.setImage(UIImage(systemName: "pause"), for: .normal)
             switch firstChoice {
             case .consolidated:
@@ -109,7 +112,7 @@ class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
                 playFile(with: "\(fileName)")
             case .full:
                 fileName = "Full Wheel of Awareness"
-            playFile(with: "\(fileName)")
+                playFile(with: "\(fileName)")
             case .basic:
                 fileName = "Basic Wheel of Awareness"
                 playFile(with: "\(fileName)")
@@ -119,37 +122,80 @@ class FullWheelsViewController: UIViewController, AVAudioPlayerDelegate{
             case .wheel:
                 break
             }
-            return
-        }
-        
-        if player.isPlaying {
-            player.pause()
-            pausePlayButton.setImage(UIImage(systemName: "play"), for: .normal)
         } else {
-            player.play()
-            pausePlayButton.setImage(UIImage(systemName: "pause"), for: .normal)
+            if newPlayer?.isPlaying == true {
+                newPlayer?.pause()
+                pausePlayButton.setImage(UIImage(systemName: "play"), for: .normal)
+            } else {
+                newPlayer?.play()
+                pausePlayButton.setImage(UIImage(systemName: "pause"), for: .normal)
+            }
         }
-        
     }
     
     @IBAction func goForwardButton(_ sender: Any) {
-        player?.currentTime += 15
+        newPlayer?.currentTime += 15
     }
 
     @objc func updateTime() {
-        guard let player = player else {
+        guard let player = newPlayer else {
             sliderBar.setValue(0, animated: false)
             return
         }
         sliderBar.setValue(Float(player.currentTime/player.duration), animated: true)
     }
     
+    func setupRemoteTransportControls() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+
+        commandCenter.playCommand.addTarget { [unowned self] event in
+            if newPlayer?.rate == 0.0 {
+                newPlayer?.play()
+                setupNowPlaying()
+                return .success
+            }
+            return .commandFailed
+        }
+
+        commandCenter.pauseCommand.addTarget { [unowned self] event in
+            if newPlayer?.rate == 1.0 {
+                newPlayer?.pause()
+                setupNowPlaying()
+                return .success
+            }
+            return .commandFailed
+        }
+    }
+    
+    func setupNowPlaying() {
+        var nowPlayingInfo = [String : Any]()
+        
+        
+        if let image = UIImage(named: "lockscreen") {
+            nowPlayingInfo[MPMediaItemPropertyArtwork] =
+                MPMediaItemArtwork(boundsSize: image.size) { size in
+                    return image
+            }
+        }
+        
+        nowPlayingInfo[MPMediaItemPropertyArtist] = "\(fileName)"
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = newPlayer?.rate
+        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = duration
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = newPlayer?.currentTime
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackProgress] = newPlayer?.currentTime ?? 0.0/duration
+
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+    }
+    
     func playFile(with name: String) {
         do {
             let audioFile = Bundle.main.path(forResource: "\(fileName)", ofType: "mp3")
-            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioFile!) as URL)
-            player?.prepareToPlay()
-            player?.play()
+            try newPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioFile!) as URL)
+//            newPlayer.prepareToPlay()
+            newPlayer?.play()
+            duration = newPlayer?.duration ?? 0.0
+            setupRemoteTransportControls()
+            setupNowPlaying()
             
         } catch {
             print("Couldn't play file")
